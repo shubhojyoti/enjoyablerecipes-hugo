@@ -5,7 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="https://recipescdn.shubhojyoti.info/assets/images/er_logo_small1.png" type="image/x-icon" />
-    <title>Enjoyable Recipes</title>
+    <title>
+        {{ if and (eq .Kind "section") (eq (singularize (lower .Title)) "offthemenu") }}
+        Off the Menu - Enjoyable Recipes
+        {{ else }}
+        {{ if .IsPage }}
+        {{ .Title }} {{ if .Params.subtitle }}- {{ .Params.subtitle}}{{ end }} - Enjoyable Recipes
+        {{ else }}
+        {{ if .IsHome }}
+        {{ .Title }}
+        {{ else }}
+        {{ if eq .Kind "taxonomy"}}
+        {{ if eq .Title "Moms Kitchen"}}Mom's Kichen{{else}}{{ .Title | singularize }} Recipes{{end}} - Enjoyable Recipes
+        {{ else }}
+        {{ .Title }} - Enjoyable Recipes
+        {{ end }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+    </title>
     <meta property="article:author" content="Shubhojyoti Bhattacharya"/>
     <link rel="stylesheet" href="/assets/css/foundation.css" type="text/css"/>
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css" type="text/css"/>

@@ -1,3 +1,8 @@
+RewriteRule ^tag/(.*)$ https://enjoyable.recipes/ingredients/$1 [R=301,L]
+RewriteRule ^recipecourses/maincourse/ https://enjoyable.recipes/recipecourses/main-course/ [R=301,L]
+RewriteRule ^specialrecipes/lowcarb/ https://enjoyable.recipes/specialrecipes/low-carb/ [R=301,L]
+RewriteRule ^specialrecipes/momskitchen/ https://enjoyable.recipes/specialrecipes/moms-kitchen/ [R=301,L]
+
 Redirect 301 /recipes/vegetables/aloo-gobi-in-tomato-sauce/ https://enjoyable.recipes/recipe/aloo-gobi-in-tomato-sauce/
 Redirect 301 /recipes/paneer/paneer-vegetable-delight/ https://enjoyable.recipes/recipe/paneer-vegetable-delight/
 Redirect 301 /recipes/vegetables/bhindi-aloo-dry/ https://enjoyable.recipes/recipe/bhindi-aloo-dry/
@@ -37,3 +42,16 @@ Redirect 301 /recipes/fish/paiya-fish-curry/ https://enjoyable.recipes/recipe/pa
 Redirect 301 /recipes/vegetables/kadai-paneer-cottage-cheese-spicy-tomato-gravy/ https://enjoyable.recipes/recipe/kadai-paneer-cottage-cheese-spicy-tomato-gravy/
 Redirect 301 /recipes/sweet/patishapta-pitha-pancakes-with-coconut-filling https://enjoyable.recipes/recipe/patishapta-pitha-pancakes-with-coconut-filling
 Redirect 301 /recipes/sweet/patishapta-pitha-pancakes-with-coconut-filling/ https://enjoyable.recipes/recipe/patishapta-pitha-pancakes-with-coconut-filling
+
+Redirect 301 /recipe-list/ https://enjoyable.recipes/recipes/
+
+Redirect 301 /recipes/chicken/ https://enjoyable.recipes/categories/chicken/
+Redirect 301 /recipes/egg/ https://enjoyable.recipes/categories/egg/
+Redirect 301 /recipes/fish/ https://enjoyable.recipes/categories/fish/
+Redirect 301 /recipes/mutton/ https://enjoyable.recipes/categories/mutton/
+Redirect 301 /recipes/paneer/ https://enjoyable.recipes/categories/paneer/
+Redirect 301 /recipes/prawn/ https://enjoyable.recipes/categories/prawn/
+Redirect 301 /recipes/savory/ https://enjoyable.recipes/categories/savory/
+Redirect 301 /recipes/sides/ https://enjoyable.recipes/categories/sides/
+Redirect 301 /recipes/sweet/ https://enjoyable.recipes/categories/sweet/
+Redirect 301 /recipes/vegetables/ https://enjoyable.recipes/categories/vegetables/
