@@ -1,0 +1,26 @@
+<div class="breadcrumb-area columns small-16 small-order-1">
+                                <div class="breadcrumb-trail breadcrumbs">
+                                    <span class="trail-browse">Currently Browsing:</span>&nbsp;
+                                    <span class="trail-begin"><a href="/" title="Enjoyable Recipes">Home</a></span>
+                                    {{ if and .IsPage (eq .Section "general" )}}
+                                        <span class="sep" aria-hidden="true"><i class="fa fa-angle-double-right fw" aria-hidden="true"></i></span> <span class="trail-end">{{ .Title }}</span>
+                                    {{ else }}
+                                    {{ if and (eq .Kind "section") (eq (singularize (lower .Title)) "offthemenu") }}
+                                        <span class="sep" aria-hidden="true"><i class="fa fa-angle-double-right fw" aria-hidden="true"></i></span> <span class="trail-end">Off the Menu</span>
+                                    {{ else }}
+                                        {{ if and .IsPage (eq .Section "offthemenu") }}
+                                            <span class="sep" aria-hidden="true"><i class="fa fa-angle-double-right fw" aria-hidden="true"></i></span> <a href="/offthemenu/" title="Off the Menu">Off the Menu</a>
+                                            <span class="sep" aria-hidden="true"><i class="fa fa-angle-double-right fw" aria-hidden="true"></i></span> <span class="trail-end">{{ .Title }}</span>
+                                        {{ else }}
+                                            <span class="sep" aria-hidden="true"><i class="fa fa-angle-double-right fw" aria-hidden="true"></i></span> <a href="/recipes/" title="Recipes">Recipes</a>
+                                            {{ if eq .Kind "taxonomy" }}
+                                                <span class="sep" aria-hidden="true"><i class="fa fa-angle-double-right fw" aria-hidden="true"></i></span> <span class="trail-end">{{ if eq .Title "Moms Kitchen"}}Mom's Kichen{{else}}{{ .Title }}{{end}}</span>
+                                            {{ else }}
+                                                <span class="sep" aria-hidden="true"><i class="fa fa-angle-double-right fw" aria-hidden="true"></i></span> <a href='/categories/{{ index .Params.categories 0 | urlize }}/' property="recipeCategory">{{ index .Params.categories 0 }}</a>
+                                                <span class="sep" aria-hidden="true"><i class="fa fa-angle-double-right fw" aria-hidden="true"></i></span> <span class="trail-end">{{ .Title }}</span>
+                                            {{ end }}
+                                        {{ end }}
+                                    {{ end }}
+                                    {{ end }}
+                                </div>
+                            </div>

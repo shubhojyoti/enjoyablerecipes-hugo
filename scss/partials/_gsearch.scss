@@ -1,0 +1,20 @@
+.cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.topsearch {
+    td.gsc-search-button {
+        height: 2.5em !important;
+        background-color: $color-body-link !important;
+    }
+
+    td.gsib_a {
+        height: 2.5em !important;
+    }
+
+    input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+        border-color: transparent;
+    }
+}

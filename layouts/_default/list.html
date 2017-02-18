@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+            <main class="small-16 large-10 columns large-order-2">
+                <h2 class="hide show-for-sr">Recipe Entry</h2>
+                <div class="articlecontainer">
+                    {{ partial "breadcrumbs.html" . }}
+                    <section id="recipemaincontent" tabindex="-1">
+                        {{ range (.Paginator 10).Pages }}
+                        {{ .Render "summary" }}
+                        {{ end }}
+                    </section>
+                    {{ partial "pagination.html" . }}
+                </div>
+            </main>
+{{ partial "sidebar1.html" . }}
+{{ partial "sidebar2.html" . }}
+{{ partial "offcanvasmenu.html" . }}
+{{ partial "footer.html" . }}

@@ -1,0 +1,38 @@
+            <!-- Sidebar 2 -->
+            <aside id="sidebar-2" class="large-4 columns large-order-3 show-for-large">
+                <h2 class="hide show-for-sr">Some Extra Info</h2>
+                                <div class="widget searchwidget">
+                    <div class="topsearch">
+                        <form id="form2_search" action="/search/" method="get">
+                            <div class="row collapse">
+                                <div class="large-11 columns">
+                                    <input id="form2_q" name="q" placeholder="Search this Blog" type="search"/>
+                                </div>
+                                <div class="large-5 columns">
+                                    <input class="button searchbox searchbutton" value="Search" type="submit"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="widget">
+                    <h3>About</h3>
+                    <p>Enjoyable recipes is an attempt to record all our adventures in the kitchen which fortunately became essential after we got married and started our lovely life together. We are both foodies and love experimenting in the kitchen. We try to get different types of cuisines but a Bengali touch nevertheless pokes its nose in. &nbsp;&nbsp; <a href="/about/">More</a>&nbsp;<span class="sep" aria-hidden="true"><i class="fa fa-angle-double-right fw" aria-hidden="true"></i></span></p>
+                </div>
+                <div class="widget">
+
+                    <h3>Tags</h3>
+                    <ul class="tagcloud">
+                        {{ range $name, $taxonomy := .Site.Taxonomies.ingredients }}
+                        {{ $nameparts := (split (humanize $name) " ")}}
+                        {{ $.Scratch.Set "finaltag" " "}}
+                        {{ range $nameparts }}
+                        {{ $.Scratch.Add "finaltag" (humanize .) }}
+                        {{ $.Scratch.Add "finaltag" " "}}
+                        {{ end }}
+                        {{ $recipetag := $.Scratch.Get "finaltag" }}
+                        <li class="tag"><a href="/ingredients/{{ $name | urlize }}">{{ $recipetag | replaceRE "^ (.*) $" "$1"}}</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </aside>

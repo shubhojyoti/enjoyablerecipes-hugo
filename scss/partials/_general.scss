@@ -1,0 +1,111 @@
+// Generic Mixins
+@mixin button-styles {
+    background-color: $color-body-link;
+
+    &:hover, &:focus {
+        background-color: #000000;
+    }
+
+    .radius {
+        border-radius: 5px;
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+@font-face {
+    font-family: 'Aleo_Light';
+    src: url('https://recipescdn.shubhojyoti.info/assets/fonts/Aleo-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-size: calc( 15px + 0.5vmin );
+    min-height: 100%;
+    overflow-x: hidden;
+    max-width: 1900px;
+}
+
+body {
+    background: $color-body url(https://recipescdn.shubhojyoti.info/assets/images/back.jpg) top center no-repeat;
+    font-family: $font-body;
+    font-size: 1rem;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: $font-heads;
+    font-weight: 800;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    &:link, &:visited {
+        color: $color-body-link;
+    }
+
+    &:hover {
+        color: $color-body-link-hover;
+    }
+
+    &:active {
+        color: $color-body-link;
+    }
+}
+
+button, .button {
+    @include button-styles;
+}
+
+a:link.button, a:visited.button {
+    color: #ffffff;
+}
+
+blockquote {
+    margin-left: 2em;
+}
+
+.full-wrap {
+    min-height: 100%;
+}
+
+.row {
+    max-width: 100em;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+/* Prevents img without src to appear */
+img:not([src]) {
+    visibility: hidden;
+}
+
+/* Fixes Firefox anomaly */
+@-moz-document url-prefix() {
+    img:-moz-loading {
+        visibility: hidden;
+    }
+}

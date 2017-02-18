@@ -1,0 +1,18 @@
+/* Back to Top of the Page arrow icon */
+#backtotopbutton {
+    position: fixed;
+    right: 0.9em;
+    bottom: 0.4em;
+    background-color: #ffffff;
+    border-radius: 1px;
+    border: 1px solid #ccc;
+
+    a {
+        display: inherit;
+        padding: 0.35em;
+
+        img {
+            height: 28px;
+        }
+    }
+}

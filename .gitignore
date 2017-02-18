@@ -1,0 +1,17 @@
+npm_modules
+bower_components
+trash
+Error.log
+.DS_Store
+.sass-cache
+.tmp
+.rvmrc
+.trashes
+*~
+dev
+public
+themes
+static/assets/css/*
+static/assets/js/*
+static/assets/fonts/*
+static/assets/images/*

@@ -1,0 +1,39 @@
+.breadcrumb-area {
+    display: none;
+}
+
+.articlecontainer > .breadcrumb-area {
+    margin-top: 1.5em;
+    margin-bottom: 0 !important;
+}
+
+@media only screen and (min-width: 40.063em) {
+    .breadcrumb-area {
+        display: block;
+        margin: 0 0 2em;
+
+        //background-color: #F5F8E2;
+        border: 1px solid #EEE1BE;
+    }
+
+    .breadcrumb-trail {
+        display: block;
+        background: none;
+        border: 0;
+        padding: 0.5em 0.5em 0.5em 0;
+
+        > * {
+            text-transform: none;
+            font-size: 0.8em;
+            color: #333333;
+            padding-right: 0.5em;
+        }
+
+        > *:before {
+            content: '';
+
+            // margin: 0 1em 0 0;
+            font-size: 1em;
+        }
+    }
+}

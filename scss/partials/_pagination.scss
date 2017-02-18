@@ -1,0 +1,24 @@
+.wp-pagenavi {
+    text-align: center;
+    margin: 1.5em auto;
+
+    .pages {
+        margin-right: 1em;
+    }
+
+    > * {
+        padding: 0.5em 1em;
+
+        //background: #F5F8E2;
+        border: 1px solid #E4D7B6;
+        font-size: 0.8em;
+        margin-right: 1em;
+        margin-bottom: 1em;
+        display: inline-block;
+    }
+
+    > .current {
+        background-color: #333333;
+        color: #fff;
+    }
+}

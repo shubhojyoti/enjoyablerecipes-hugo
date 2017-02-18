@@ -1,0 +1,82 @@
+                {{ $pag := .Paginator }}
+                {{ if ne $pag.TotalPages 1 }}
+                    <div class="wp-pagenavi pager cf">
+                        {{ if gt $pag.PageNumber 1 }}
+                        <a href="{{ .RelPermalink }}">« First</a>
+                        {{ end }}
+                        {{ if $pag.HasPrev }}
+                            {{ if eq $pag.Prev.PageNumber 1 }}
+                         <a href="{{ .RelPermalink }}">« Previous</a>
+                            {{ else }}
+                        <a href="{{ .RelPermalink }}page/{{ $pag.Prev.PageNumber }}/">« Previous</a>
+                            {{ end }}
+                        {{ end }}
+
+                        {{ $currPage := $pag.PageNumber }}
+                        {{ $.Scratch.Set "nos" (slice 0) }}
+                        {{ $.Scratch.Add "nos" (slice 1) }}
+                        {{ if gt $pag.TotalPages 1 }}
+                            {{ $.Scratch.Add "nos" $pag.Last.PageNumber }}
+                            {{ if le $pag.TotalPages 5 }}
+                                {{ range (seq 2 $pag.TotalPages) }}
+                                    {{ if in ($.Scratch.Get "nos") .}}
+                                    {{ else }}
+                                    {{ $.Scratch.Add "nos" . }}
+                                    {{ end }}
+                                {{ end }}
+                            {{ else }}
+                                {{ if gt $pag.PageNumber 2 }}
+                                    {{ if in ($.Scratch.Get "nos") (sub $pag.PageNumber 1 )}}
+                                    {{ else }}
+                                    {{ $.Scratch.Add "nos" (sub $pag.PageNumber 1 )}}
+                                    {{ end }}
+                                {{ end }}
+                                {{ if in ($.Scratch.Get "nos") $pag.PageNumber}}
+                                {{ else }}
+                                {{ $.Scratch.Add "nos" $pag.PageNumber}}
+                                {{ end }}
+                                {{ if le (add $pag.PageNumber 1) $pag.TotalPages }}
+                                    {{ if in ($.Scratch.Get "nos") (add $pag.PageNumber 1 )}}
+                                    {{ else }}
+                                    {{ $.Scratch.Add "nos" (add $pag.PageNumber 1 )}}
+                                    {{ end }}
+                                {{ end }}
+                                {{ if and (eq $pag.PageNumber 1) (gt $pag.TotalPages 2) }}
+                                    {{ if in ($.Scratch.Get "nos") 3}}
+                                    {{ else }}
+                                    {{ $.Scratch.Add "nos" 3 }}
+                                    {{ end }}
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
+                        {{ $pagenos := sort ($.Scratch.Get "nos")}}
+                        {{ $currLink := .RelPermalink }}
+                        {{ range $idx, $elem := $pagenos }}
+                            {{ if gt $idx 0 }}
+                                {{ if eq $elem $currPage }}
+                                    <span class="current">{{ $currPage }}</span>
+                                {{ else }}
+                                    {{ if eq $elem 1}}
+                                    <a href="{{ $currLink }}">1</a>
+                                    {{ else }}
+                                    <a rel="nofollow" href="{{ $currLink }}page/{{ $elem }}/">{{ $elem }}</a>
+                                    {{ end }}
+                                {{ end }}
+                                {{ if lt $elem $pag.TotalPages }}
+                                    {{ $nextval := index $pagenos (add $idx 1) }}
+                                    {{ $diff := sub (int $nextval) (int $elem) }}
+                                    {{ if ne $diff 1 }}
+                                    <span>...</span>
+                                    {{ end }}
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
+
+                        {{ if $pag.HasNext }}
+                        <a href="{{ .RelPermalink }}page/{{ $pag.Next.PageNumber }}/">Next »</a>
+                        {{ end }}
+                        {{ if ne $pag.PageNumber $pag.Last.PageNumber }}
+                        <a href="{{ .RelPermalink }}page/{{ $pag.Last.PageNumber }}/">Last »</a>
+                        {{ end }}
+                    </div>
+                {{ end }}

@@ -1,0 +1,23 @@
+{{ if .Params.recipeimage }}
+{{ $imageparts := split .Params.recipeimage "." }}
+<figure class="recipeimage">
+                                <picture>
+                                    <source
+                                        media="(min-width: 320px)"
+                                        data-original-set="/assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w750h300.{{ index $imageparts 1 }} 750w,
+                                                /assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w699h262.{{ index $imageparts 1 }} 699w,
+                                                /assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w571h214.{{ index $imageparts 1 }} 571w,
+                                                /assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w411h154.{{ index $imageparts 1 }} 411w,
+                                                /assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w251h94.{{ index $imageparts 1 }} 251w",
+                                        sizes="(max-width: 420px) 251px,
+                                               ((min-width: 421px) and (max-width: 600px)) 411px,
+                                               ((min-width: 601px) and (max-width: 768px)) 571px,
+                                               ((min-width: 769px) and (max-width: 1024px)) 699px,
+                                               (min-width: 1025px) 750px" />
+                                    <img data-original="/assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w699h262.{{ index $imageparts 1 }}" alt='{{ .Title }}{{ if .Params.subtitle }} &#45; {{ .Params.subtitle }}{{ end }}'>
+                                </picture>
+                                <figcaption property="name">
+                                    {{ .Title }}{{ if .Params.subtitle }} &#45; {{ .Params.subtitle }}{{ end }}
+                                </figcaption>
+                            </figure>
+{{ end }}

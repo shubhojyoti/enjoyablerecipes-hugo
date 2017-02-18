@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+            <main class="small-16 large-10 columns large-order-2">
+                <div class="articlecontainer">
+                    <article id="maincontent" class="post row" vocab="http://schema.org/" typeof="Recipe">
+                        <div class="ind-post small-16 columns">
+                            {{ partial "breadcrumbs.html" . }}
+                            <div class="row" id="recipemaincontent" tabindex="-1">
+                                <h3 class="singletitle columns small-12 small-order-2">{{ .Title }}</h3>
+                            </div>
+                            <div class="content-post" property="description">
+                                {{ .Content }}
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </main>
+{{ partial "sidebar1.html" . }}
+{{ partial "sidebar2.html" . }}
+{{ partial "offcanvasmenu.html" . }}
+{{ partial "footer.html" . }}

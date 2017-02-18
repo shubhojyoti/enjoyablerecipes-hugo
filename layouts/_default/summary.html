@@ -1,0 +1,44 @@
+                    <article class="post row">
+                        <div class="ind-post small-16 columns">
+                            <div class="row">
+                                <h3 class="singletitle columns small-12 small-order-2"><a href='{{ .Permalink }}' rel="bookmark">{{ .Title }}</a></h3>
+                                {{ if or .Params.recipetypes .Params.recipecourses .Params.specialrecipes }}
+                                <aside class="catmeta columns clearfix small-12 small-order-1">
+                                    <div class="hide show-for-sr">Recipe Categories</div>
+                                    {{ range .Params.recipetypes }}
+                                    <a href="/recipetypes/{{ . | urlize }}" property="recipeCategory">{{ . }}</a>
+                                    {{ end }}
+                                    {{ range .Params.recipecourses }}
+                                    <a href="/recipecourses/{{ . | urlize }}" property="recipeCategory">{{ . }}</a>
+                                    {{ end }}
+                                    {{ range .Params.specialrecipes }}
+                                    <a href="/specialrecipes/{{ . | urlize }}" property="recipeCategory">{{ . }}</a>
+                                    {{ end }}
+                                </aside>
+                                {{ end }}
+                                <aside class="columns small-12 small-order-3">
+                                    {{ if .Params.subtitle }}
+                                    <span class="description">{{ .Params.subtitle }}</span>
+                                    {{ end }}
+                                    <div class="smallmeta row clearfix"><time datetime='2015-01-15 19:32:00' property="datePublished"><span class="fa fa-clock-o fa-fw"></span>{{ .Date.Format "January 2, 2006" }}</time>
+                                        {{$nameParts := split .Params.author " "}}
+                                        <address><span class="fa fa-user fa-fw"></span><a href="/about" property="author" vocab="http://schema.org/" typeof="Person"><span property="givenName">{{ index $nameParts 0 }}</span> <span property="familyName">{{ index $nameParts 1 }}</span><meta property="url" content="/about"></a></address>
+                                        <div>
+                                            <span class="fa fa-comment-o fa-fw"></span>
+                                            <a href="#commentsection">Leave a comment</a>
+                                        </div>
+                                    </div>
+                                </aside>
+                            </div>
+                            <div class="content-post">
+                                {{ if .Params.excerpt }}
+                                {{ .Params.excerpt }}
+                                {{ else }}
+                                {{ .Summary }}
+                                {{ end }}
+                            </div>
+                            {{ partial "listpageimages.html" . }}
+                            <div class="readmore clearfix"><a href='{{ .Permalink }}' class="button small but-right">Read More</a></div>
+
+                        </div>
+                    </article>

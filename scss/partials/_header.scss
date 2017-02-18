@@ -1,0 +1,97 @@
+/* Main Header */
+.header {
+    position: relative;
+}
+
+.mylogo {
+    padding: 0.35em 0;
+    position: relative;
+}
+
+.mylogo > :first-child {
+    .logosvg {
+        width: 430px;
+        transition: width 0.2s;
+
+        @media only screen and (max-width: 550px) {
+            width: 320px;
+        }
+
+        @media only screen and (max-width: 410px) {
+            .svglogotext {
+                display: none;
+            }
+        }
+    }
+}
+
+.prisocial {
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    text-align: right;
+    padding-right: 2em;
+
+    a {
+        padding: 0.35em 0.25em;
+        border: 1px solid #541c02;
+        border-radius: 50%;
+
+        &:link, &:visited {
+            display: inline-block;
+            font-size: 1em;
+            margin-right: 10px;
+        }
+
+        &:hover {
+            color: #eeb188;
+            background-color: #541c02;
+        }
+
+        span {
+            text-align: center;
+        }
+    }
+}
+
+/* Top Navigation */
+.mytopnav {
+    background: #541c02 url(https://recipescdn.shubhojyoti.info/assets/images/primarynavribbon.png) repeat-x;
+    height: 49px;
+    position: relative;
+    z-index: 2;
+
+    ul {
+        list-style-type: none;
+
+        > li {
+            display: inline-block;
+            padding: 0.5em 1.5em;
+            box-sizing: border-box;
+
+            > a {
+                &:link, &:visited {
+                    box-sizing: border-box;
+                    color: #fff;
+                    font-size: 0.8em;
+                    vertical-align: 0.1rem;
+                }
+
+                &:hover {
+                    color: #ffff00;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 64em) {
+    .mylogo {
+        padding-left: 1em;
+    }
+}

@@ -1,0 +1,21 @@
+// Global Variables
+$font-heads: 'PT Serif', serif;
+$font-body: 'Open Sans', sans-serif;
+$color-body: #fffee9;
+$color-body-link: #541c02;
+$color-body-link-hover: #333333;
+
+@import 'partials/googlefonts';
+@import 'partials/general';
+@import 'partials/header';
+@import 'partials/home';
+@import 'partials/main';
+@import 'partials/comments';
+@import 'partials/slider';
+@import 'partials/sidebar';
+@import 'partials/pagination';
+@import 'partials/offcanvas';
+@import 'partials/breadcrumbs';
+@import 'partials/blogarchive';
+@import 'partials/gsearch';
+@import 'partials/backtotop';

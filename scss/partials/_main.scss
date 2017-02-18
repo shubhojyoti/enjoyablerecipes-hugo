@@ -1,0 +1,373 @@
+/* Main Content */
+.mainwrap {
+    border-left: 1px solid #EEE1BE;
+    border-right: 1px solid #EEE1BE;
+    background: $color-body;
+    max-width: 120em;
+    width: 95%;
+    position: relative;
+
+    main {
+        margin-bottom: 1em;
+    }
+}
+
+.description {
+    font-size: 1em;
+    color: #7E632B;
+}
+
+.ind-post {
+    background: url('https://recipescdn.shubhojyoti.info/assets/images/divider.png') bottom center no-repeat;
+    margin: 1.5em 0;
+    padding-bottom: 1.5em;
+}
+
+#recipemaincontent {
+    outline: none;
+}
+
+.content-post {
+    padding: 0 0 1em;
+    color: #111111;
+
+    > p {
+        color: #111111;
+    }
+
+    h4 {
+        margin: 0.5em 0;
+        color: #58592E;
+        font-weight: bold;
+        font-size: 2em;
+    }
+
+    ul {
+        line-height: 1.8;
+    }
+}
+
+.pagetitle {
+    border-bottom: 1px solid #EEE1BE;
+    padding-bottom: 0.3em;
+}
+
+.page-post {
+    background: none;
+    margin-bottom: 0;
+
+    .pagetitle {
+        margin-left: 1rem;
+        padding-left: 0;
+        font-size: 2.5rem;
+    }
+}
+
+%commonmeta {
+    text-transform: uppercase;
+    padding: 0.5em 0 0;
+    border-top: 1px solid #EEE1BE;
+    margin-right: 1em;
+}
+
+.smallmeta {
+    @extend %commonmeta;
+
+    .row .row & {
+        @extend %commonmeta;
+
+        margin: 1em 0 0;
+    }
+}
+
+.smallmeta {
+    > * {
+        margin-right: 1.5em;
+        color: #777;
+        margin-bottom: 1em;
+        font-size: 0.7rem;
+        font-style: normal !important;
+
+        > a {
+            &:link, &:visited {
+                color: #777;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.catmeta {
+    padding: 0 1em;
+
+    a:link, a:visited {
+        margin-right: 0.5em;
+        padding: 0.25em 1em;
+
+        //background-color: #FCFBCF;
+        border: 1px solid #DBDAA3;
+        font-size: 0.8em;
+        float: left;
+        margin-bottom: 1em;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.post > .post {
+    margin-top: 1.5em;
+}
+
+.recipeimage {
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 0 0 5px #ccc;
+    border: 1px solid #ddd;
+    display: table;
+    position: relative;
+
+    figcaption {
+        text-align: center;
+        background-color: rgba(70, 25, 5, 0.8);
+        color: #ffffff;
+        opacity: 0.9;
+        position: absolute;
+        padding: 0.3em;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        font-size: 0.8em;
+        font-style: italic;
+    }
+}
+
+.recipeimagesingle {
+    margin: 0 auto;
+    display: table;
+    padding: 10px;
+    box-shadow: 0 0 5px #ccc;
+    border: 1px solid #ddd;
+    margin-bottom: 1.5em;
+
+    figcaption {
+        text-align: left;
+        background-color: rgba(70, 25, 5, 0.8);
+        color: #fff;
+        opacity: 0.9;
+        position: absolute;
+        padding: 0.5em;
+        bottom: 20px;
+        left: 10px;
+        right: 10px;
+        font-size: 1.2em;
+        font-style: normal;
+    }
+}
+
+.postextrainfo {
+    margin-bottom: 1em;
+}
+
+.postextras {
+    padding: 1em 0;
+    background-color: #F5F8E2;
+    border: 1px solid #EEE1BE;
+    font-size: 0.8em !important;
+}
+
+.readmore {
+    margin-top: 1em;
+}
+
+.readmore > a:link {
+    border-radius: 0 !important;
+}
+
+.but-right {
+    float: right;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    border-top: 1px solid #111;
+    box-shadow: 0 5px 3px 0 rgba(0, 0, 0, 0.8);
+    padding: 1em;
+
+    div {
+        text-align: center;
+        color: #ffffff;
+        font-size: 0.8em;
+
+        a {
+            &:link, &:visited {
+                color: orange;
+            }
+        }
+    }
+}
+
+/* Skip Content */
+.skipcontent {
+    display: block;
+    width: 1px;
+    height: 1px;
+    background: #f5f8e2;
+    position: absolute;
+    left: -1000px;
+    top: 0;
+    z-index: -1000;
+}
+
+.skipcontent:focus {
+    width: 100%;
+    outline: 1px solid #EEE1BE;
+    text-align: center;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 5px;
+}
+
+.singletitle {
+    color: $color-body-link;
+}
+
+.extratext {
+    margin-top: 3em;
+}
+
+.textaligncenter {
+    text-align: center;
+}
+
+/* Archive Recipe Image Lists */
+#recentrecipes {
+    background: url('https://recipescdn.shubhojyoti.info/assets/images/divider.png') bottom center no-repeat;
+    padding-bottom: 1em;
+    margin-bottom: 3em;
+}
+
+.recipelistentries {
+    margin-top: 1em;
+
+    li {
+        padding: 0.3em 0 0 0;
+    }
+
+    a:link {
+        text-align: left;
+        margin-left: 1em;
+        font-size: 1rem;
+
+        span {
+            color: #333;
+
+            &::before {
+                content: ' - ';
+            }
+        }
+    }
+}
+
+.recipeentry {
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+
+    a.recipeentryimage:link {
+        display: block;
+        border: 1px solid #ccc;
+        background-color: #ffffff;
+        margin: 0 auto;
+        padding: 10px;
+        display: table;
+        transition: transform 0.25s ease-in;
+    }
+
+    a.recipeentryimage:hover {
+        transform: translate3d(0, -5px, 0);
+        box-shadow: 0 5px 0 0 #ccc;
+    }
+
+    .recipelisttitle {
+        text-align: center;
+
+        .recipename {
+            font-size: 1rem;
+            padding: 0.5em 0 0;
+            margin: 0;
+        }
+
+        .desc {
+            font-size: 0.8rem;
+            padding: 0;
+            margin: 0;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.sortingoptions {
+    //background-color: #ffffff;
+    border-bottom: 1px solid #EEE1BE;
+    font-size: 0.8rem;
+    line-height: 1.2;
+
+    //padding-top: 0.5em;
+    margin: 0 0.3em !important;
+    position: relative;
+    z-index: 2;
+
+    > * {
+        display: inline-block;
+    }
+
+    .sortrow {
+        .sortby {
+            padding: 0.5em;
+        }
+
+        .selected {
+            border: 1px solid #EEE1BE;
+            border-bottom: none !important;
+            background-color: $color-body;
+            position: relative;
+            bottom: -1px;
+            z-index: 3;
+
+            a:link {
+                color: #000;
+                cursor: default;
+            }
+        }
+    }
+}
+
+/* Media Queries */
+/* For small and medium screen remove the Top navigations and push the footer social */
+@media only screen and (max-width: 64em) {
+    .mainwrap {
+        max-width: 100%;
+    }
+
+    .mytopnav {
+        height: 7px;
+
+        ul {
+            display: none;
+        }
+    }
+
+    figcaption {
+        display: none;
+    }
+}

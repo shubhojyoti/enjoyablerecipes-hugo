@@ -1,0 +1,134 @@
+/* Sidebar Widgets */
+.widget {
+    h3 {
+        color: #58592e;
+        margin: 2em 0 0 0;
+        text-align: center;
+        font-size: 1rem;
+
+        &:first-child {
+            margin-top: 0.5em;
+        }
+
+        + p {
+            margin-top: 1em;
+            line-height: 1.8;
+        }
+    }
+
+    ul {
+        margin-left: 0;
+        padding-left: 0;
+        list-style: none;
+        margin-top: 0.5em;
+
+        > li {
+            margin-left: 0;
+            padding-left: 0;
+            color: $color-body-link;
+            text-align: center;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            > a {
+                &:link, &:visited {
+                    color: $color-body-link;
+                }
+
+                &:hover {
+                    color: $color-body-link-hover;
+                }
+            }
+        }
+    }
+
+    a {
+        font-size: 0.8rem;
+    }
+}
+
+/* Sidebar 1 */
+#sidebar-1 {
+    min-height: 100%;
+
+    .widget {
+        margin-top: 2em;
+    }
+}
+
+/* Sidebar-2 */
+#sidebar-2 {
+    min-height: 100%;
+    background: #F5F8E2;
+    border-left: 1px solid #EEE1BE;
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .widget {
+        border-bottom: 1px solid #EEE1BE;
+        padding-top: 1em;
+        padding-bottom: 1.5em;
+        box-shadow: 0 2px 3px 0 rgba(255, 255, 255, 0.3);
+
+        &:last-child {
+            border-bottom: 0;
+            box-shadow: none;
+        }
+
+        h3 {
+            text-align: left;
+        }
+    }
+}
+
+/* Sidebar - 2 Search */
+.searchwidget {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.topsearch {
+    margin-top: 1.5em;
+    padding: 1em;
+}
+
+.topsearch .searchbox {
+    height: 2.5rem !important;
+    border-radius: 0;
+}
+
+.searchbutton {
+    font-size: 0.8em;
+    padding: 0.97em;
+    color: #fff;
+    width: 100%;
+}
+
+.tagcloud {
+    li {
+        display: inline-block;
+        color: #fff;
+        background: #f5f8e2;
+        border: 1px solid #EEE1BE;
+        padding: 0 0.3em !important;
+        margin-bottom: 0.3em !important;
+
+        &:last-child {
+            border-bottom: 1px solid #EEE1BE !important;
+        }
+
+        a {
+            &:link, &:visited, &:hover, &:active {
+                text-align: center;
+            }
+        }
+
+        &:hover {
+            color: #000000;
+        }
+    }
+}

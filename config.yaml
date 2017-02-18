@@ -1,0 +1,17 @@
+languageCode: "en-us"
+author: "Shubhojyoti Bhattacharya"
+title: "Enjoyable Recipes"
+baseurl: "https://enjoyable.recipes"
+MetaDataFormat: "yaml"
+taxonomies:
+    ingredient: "ingredients"
+    category: "categories"
+    recipecourse: "recipecourses"
+    recipetype: "recipetypes"
+    specialrecipe: "specialrecipes"
+permalinks:
+    recipe: /recipe/:slug/
+    offthemenu: /offthemenu/:slug/
+    general: /:slug/
+disqusShortname: "my-recipes-test"
+canonifyURLs: true

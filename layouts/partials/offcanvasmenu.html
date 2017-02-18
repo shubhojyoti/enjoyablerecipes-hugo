@@ -1,0 +1,77 @@
+            <!-- Off Canvas Menu -->
+            <aside class="boom-right-off-canvas-menu" aria-hidden="true">
+                <div class="row">
+                    <div class="small-16 columns searchoff">
+                        <div class="offsearch">
+                            <form role="search" method="get" class="search-form" action="https://enjoyablerecipes.yay/core">
+                                <div class="row collapse">
+                                    <div class="small-12 medium-12 columns">
+                                        <input class="offcanvassearch" type="text" placeholder="Search this Blog" name="s">
+                                    </div>
+                                    <div class="small-2 medium-4 columns buttonsave">
+                                        <button href="#" class="button postfix offcanvassearch"><span class="fa fa-search"></span></button>
+                                    </div>
+                                  </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="offlinks">
+                    <div class="mainlinks">
+                        <ul>
+                            <li><span class="icons fa fa-home fa-fw" aria-hidden="true"></span><a href="/">Home</a></li>
+                            <li><span class="icons fa fa-list-alt fa-fw"></span><a href="/recipes/">Full Recipe List</a></li>
+                            <li><span class="icons fa fa-list-alt fa-fw"></span><a href="/specialrecipes/low-carb/">Low Carb</a></li>
+                            <li><span class="icons fa fa-list-alt fa-fw"></span><a href="/specialrecipes/moms-kitchen/">Mom's Kitchen</a></li>
+                            <li><span class="icons fa fa-list-ul fa-fw"></span><a href="/offthemenu/">Off the Menu</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="offbar">
+                    <div class="widget">
+                        <h4 class="widget-title">Recipes by Courses</h4>
+                        <ul>
+                            {{ range $name, $taxonomy := .Site.Taxonomies.recipecourses }}
+                            {{ $nameparts := (split (humanize $name) " ")}}
+                            {{ $.Scratch.Set "finaltag" " "}}
+                            {{ range $nameparts }}
+                            {{ $.Scratch.Add "finaltag" (humanize .) }}
+                            {{ $.Scratch.Add "finaltag" " "}}
+                            {{ end }}
+                            {{ $recipetag := $.Scratch.Get "finaltag" }}
+                            <li><a href="/recipecourses/{{ $name | urlize }}">{{ $recipetag | replaceRE "^ (.*) $" "$1"}}</a></li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h4 class="widget-title">Recipes by Types</h4>
+                        <ul>
+                            {{ range $name, $taxonomy := .Site.Taxonomies.recipetypes }}
+                            {{ $nameparts := (split (humanize $name) " ")}}
+                            {{ $.Scratch.Set "finaltag" " "}}
+                            {{ range $nameparts }}
+                            {{ $.Scratch.Add "finaltag" (humanize .) }}
+                            {{ $.Scratch.Add "finaltag" " "}}
+                            {{ end }}
+                            {{ $recipetag := $.Scratch.Get "finaltag" }}
+                            <li><a href="/recipetypes/{{ $name | urlize }}">{{ $recipetag | replaceRE "^ (.*) $" "$1"}}</a></li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h4 class="widget-title">Recipes by Categories</h4>
+                        <ul>
+                            {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                            {{ $nameparts := (split (humanize $name) " ")}}
+                            {{ $.Scratch.Set "finaltag" " "}}
+                            {{ range $nameparts }}
+                            {{ $.Scratch.Add "finaltag" (humanize .) }}
+                            {{ $.Scratch.Add "finaltag" " "}}
+                            {{ end }}
+                            {{ $recipetag := $.Scratch.Get "finaltag" }}
+                            <li><a href="/categories/{{ $name | urlize }}">{{ $recipetag | replaceRE "^ (.*) $" "$1"}}</a></li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </aside>

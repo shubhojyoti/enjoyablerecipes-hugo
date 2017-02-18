@@ -1,0 +1,60 @@
+{{ partial "header.html" . }}
+            <main class="small-16 large-10 columns large-order-2">
+                <h2 class="hide show-for-sr">Recipe Entry</h2>
+                <div class="articlecontainer">
+                    <div class="slider hide-for-small-only align-center">
+                        <div class="slider_images show1">
+                        </div>
+                        <div class="slider_labels">
+                            <label for="sliderSwitch1">
+                                <input id="sliderSwitch1" class="slider__switch" type="radio" name="sliderSwitch" />
+                                <span></span>
+                            </label>
+                            <label for="sliderSwitch2">
+                                <input id="sliderSwitch2" class="slider__switch" type="radio" name="sliderSwitch" />
+                                <span></span>
+                            </label>
+                            <label for="sliderSwitch3">
+                                <input id="sliderSwitch3" class="slider__switch" type="radio" name="sliderSwitch" />
+                                <span></span>
+                            </label>
+                            <label for="sliderSwitch4">
+                                <input id="sliderSwitch4" class="slider__switch" type="radio" name="sliderSwitch" />
+                                <span></span>
+                            </label>
+                            <label for="sliderSwitch5">
+                                <input id="sliderSwitch5" class="slider__switch" type="radio" name="sliderSwitch" />
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div id="recentrecipes">
+                        <h2><span>Latest Recipes</span></h2>
+                        {{ range first 2 (where .Site.Pages "Section" "in" (slice "recipe")) }}
+                        {{ .Render "summary" }}
+                        {{ end }}
+                        <div class="row align-center small-up-2 medium-up-3 large-up-3">
+                            {{ range first 3 (after 2 (where .Site.Pages "Section" "in" (slice "recipe"))) }}
+                            <div class="recipeentry column">
+                                {{ $imageparts := split .Params.recipeimage "." }}
+                                <a href="{{ .Permalink }}"><figure>
+                                    <img src="/assets/blogposts/recipeimages/{{ index $imageparts 0}}-w450h338.{{ index $imageparts 1}}" alt="{{ .Title }}">
+                                    <figcaption>{{ .Title }}</figcaption>
+                                </figure></a>
+                            </div>
+                            {{ end }}
+                        </div>
+                        <div class="row align-center">
+                            <div class="viewallbutton column shrink">
+                                <a class="button large" href="/recipes/" title="View all Recipes">View all Recipes&nbsp;&nbsp;&nbsp;<span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+{{ partial "sidebar1.html" . }}
+{{ partial "sidebar2.html" . }}
+{{ partial "offcanvasmenu.html" . }}
+{{ partial "footer.html" . }}

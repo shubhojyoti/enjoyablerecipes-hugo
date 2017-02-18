@@ -1,0 +1,140 @@
+.slider {
+    margin: 2.5rem auto 0;
+    max-width: 750px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider__switch {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+
+    + span::before {
+        content: '';
+        display: inline-block;
+        width: 11px;
+        height: 11px;
+        vertical-align: -0.25em;
+        border-radius: 50%;
+        border: 2px solid #FFF;
+        box-shadow: 0 0 0 1px #8e705b;
+        margin-right: 0.75em;
+        transition: 0.5s ease all;
+    }
+
+    &:checked + span::before {
+        background: $color-body-link;
+        box-shadow: 0 0 0 2px $color-body-link;
+    }
+
+    &:focus + span::after {
+        outline: thin dotted;
+    }
+}
+
+.slider_labels {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slider_labels > label {
+    display: inline-block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.slider_images {
+    font-size: 0;
+    transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+    white-space: nowrap;
+    width: inherit;
+    margin: 0 auto;
+
+    .slide_image {
+        border: 1px solid #ccc;
+        background-color: #ffffff;
+        margin: 0 auto;
+        box-shadow: 0 0 5px #ccc;
+        padding: 10px;
+        display: inline-block;
+        width: inherit;
+    }
+
+    figure {
+        padding: 0;
+        margin: 0 auto;
+
+        img {
+            padding: 0;
+            border: 1px solid #ccc;
+        }
+    }
+
+    figcaption {
+        font-size: 16px;
+        text-align: left;
+        background-color: rgba(70, 25, 5, 0.8);
+        position: absolute;
+        bottom: 30px;
+        font-style: normal;
+        margin-left: 1px;
+        padding: 1.5em 1.5em 0;
+
+        a:link, a:visited {
+            color: #fff;
+            font-size: 1.2rem;
+            line-height: 1em;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #fff;
+            font-size: 1.2rem;
+            line-height: 1em;
+        }
+
+        .desc {
+            color: #aaa;
+            font-size: 0.8rem;
+        }
+    }
+
+    .recipeimage.show {
+        color: red;
+    }
+}
+
+.slider_images.show1 {
+    transform: translate3d(0, 0, 0);
+}
+
+.slider_images.show2 {
+    transform: translate3d(-100%, 0, 0);
+}
+
+.slider_images.show3 {
+    transform: translate3d(-200%, 0, 0);
+}
+
+.slider_images.show4 {
+    transform: translate3d(-300%, 0, 0);
+}
+
+.slider_images.show5 {
+    transform: translate3d(-400%, 0, 0);
+}
+
+@media only screen and (max-width: 64em) {
+    figcaption {
+        display: block !important;
+    }
+}

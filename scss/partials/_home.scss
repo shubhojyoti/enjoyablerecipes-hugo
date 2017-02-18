@@ -1,0 +1,50 @@
+#recentrecipes {
+    margin-top: 2.5em;
+    border-top: 1px solid #EEE1BE;
+    position: relative;
+    text-align: center;
+
+    h2 {
+        color: #58592e;
+        font-family: 'PT Serif', serif;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+        padding: 0 10px 0.3em 10px;
+        position: relative;
+        top: -0.75em;
+        display: inline-block;
+        width: auto;
+        background: $color-body;
+    }
+
+    > * {
+        text-align: left;
+    }
+}
+
+.recipeentry {
+    padding: 1em;
+    margin: 0;
+    margin-top: -1.5em;
+
+    figure {
+        border: 1px solid #ccc;
+        background-color: #ffffff;
+        margin: 0 auto;
+        padding: 10px;
+        display: table;
+        transition: transform 0.25s ease-in;
+
+        &:hover {
+            transform: translate3d(0, -5px, 0);
+            box-shadow: 0 5px 0 0 #ccc;
+        }
+
+        figcaption {
+            font-size: 0.8rem;
+            padding-top: 0.45em;
+            color: #333;
+            text-align: center;
+        }
+    }
+}

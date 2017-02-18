@@ -1,0 +1,56 @@
+{{ partial "header.html" . }}
+            <main class="small-16 large-12 columns large-order-2">
+                <div class="articlecontainer">
+                    <div class="post row">
+                        <div class="ind-post page-post small-16 columns">
+                            <div class="row">
+                                <h2 class="pagetitle singletitle columns small-12 small-order-2">Recipe List</h2>
+                            </div>
+                            <div class="content-post" property="description">
+                                <p>All the recipes posted to this blog are listed below. You can switch to a List view without the images by selecting the appropriate options below. Please do contact us if you are not able to view any of the recipes listed below.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sortingoptions row">
+                        <div class="column">
+                            <div class="sortrow row align-left">
+                                <div class="sortby column align-self-middle shrink">View: </div>
+                                <div class="viewbyimage sortby column align-self-middle shrink selected"><a class="recipeimageview" href="#" rel="nofollow" title="View Recipe by Images"><span class="fa fa-picture-o fa-lg fa-fw" aria-hidden="true"></span></a></div>
+                                <div class="viewbylist sortby column align-self-middle shrink"><a class="recipelistview" href="#" rel="nofollow" title="View Recipe by Title"><span class="fa fa-list fa-lg fa-fw" aria-hidden="true"></span></a></div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="sortrow row align-right">
+                                <div class="sortby column align-self-middle shrink">Sort: </div>
+                                <div class="sortby column align-self-middle shrink"><a class="recipesortdateoldestfirst" href="#" rel="nofollow" title="Sort Recipes by Oldest first"><span class="fa fa-angle-double-up fa-lg" aria-hidden="true"></span>&nbsp;<span class="fa fa-calendar fa-lg fa-fw" aria-hidden="true"></span></a></div>
+                                <div class="sortby column align-self-middle hide shrink"><a class="recipesortdaterecentfirst" href="#" rel="nofollow" title="Sort Recipes by most Recent first"><span class="fa fa-angle-double-down fa-lg" aria-hidden="true"></span>&nbsp;<span class="fa fa-calendar fa-lg fa-fw" aria-hidden="true"></span></a></div>
+                                <div class="sortby column align-self-middle shrink"><a class="recipesortasc" href="#" rel="nofollow" title="Sort Recipes alphabetically in ascending order"><span class="fa fa-sort-alpha-asc fa-lg fa-fw" aria-hidden="true"></span></a></div>
+                                <div class="sortby column align-self-middle shrink"><a class="recipesortdesc" href="#" rel="nofollow" title="Sort Recipes alphabetically in descending order"><span class="fa fa-sort-alpha-desc fa-lg fa-fw" aria-hidden="true"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recipeentries row align-center small-up-2 medium-up-3 large-up-4">
+                        {{ range where .Site.Pages "Type" "in"  ("recipe") }}
+                        <div class="recipeentry column">
+                            <a class="recipeentryimage" href="{{ .Permalink }}">
+                                {{ $imageparts := split .Params.recipeimage "." }}
+                                <img src="/assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w411h308.{{ index $imageparts 1 }}" alt="{{ .Title }} - {{ if .Params.subtitle }}{{ .Params.subtitle }}{{ end }}">
+                            </a>
+                            <div class="recipelisttitle">
+                                <p class="recipename"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+                                {{ if .Params.subtitle }}<p class="desc"><a href="{{ .Permalink }}">{{ .Params.subtitle }}</a></p>{{ end }}
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                    <div class="recipelistentries hide">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </main>
+{{ partial "sidebar2.html" . }}
+{{ partial "offcanvasmenu.html" . }}
+{{ partial "footer.html" . }}

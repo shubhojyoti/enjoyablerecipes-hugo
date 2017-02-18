@@ -1,0 +1,5 @@
+<ul>
+{{ range .Params}}
+    <li property="recipeIngredient">{{ . | markdownify}}</li>
+{{ end }}
+</ul>

@@ -1,0 +1,20 @@
+{{ if .Page.Params.recipeimage }}
+{{ $imageparts := split .Page.Params.recipeimage "." }}
+<figure class="recipeimage{{ if .Get "pagetype" }}{{ if eq (.Get "pagetype") "single" }} recipeimagesingle{{ end }}{{ end }}">
+    <picture>
+        <source media="(min-width: 320px)" data-original-set="/assets/blogposts/recipeimages/{{ .Page.Params.recipeimage }} 844w,
+                    /assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w699h524.{{ index $imageparts 1 }} 699w,
+                    /assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w571h428.{{ index $imageparts 1 }} 571w,
+                    /assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w411h308.{{ index $imageparts 1 }} 411w,
+                    /assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w251h188.{{ index $imageparts 1 }} 251w" , sizes="(max-width: 420px) 251px,
+                   ((min-width: 421px) and (max-width: 600px)) 411px,
+                   ((min-width: 601px) and (max-width: 768px)) 571px,
+                   ((min-width: 769px) and (max-width: 1024px)) 699px,
+                   (min-width: 1025px) 844px"/>
+        <img data-original="/assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w699h524.{{ index $imageparts 1 }}" alt='{{ .Page.Title }}{{ if .Page.Params.subtitle }} &#45; {{ .Page.Params.subtitle }}{{ end }}' property="image">
+    </picture>
+    <figcaption property="name">
+        {{ .Page.Title }}{{ if .Page.Params.subtitle }} &#45; {{ .Page.Params.subtitle }}{{ end }}
+    </figcaption>
+</figure>
+{{ end }}
