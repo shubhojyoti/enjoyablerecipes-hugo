@@ -13,5 +13,5 @@ permalinks:
     recipe: /recipe/:slug/
     offthemenu: /offthemenu/:slug/
     general: /:slug/
-disqusShortname: "my-recipes-test"
+disqusShortname: "enjoyablerecipes"
 canonifyURLs: true
