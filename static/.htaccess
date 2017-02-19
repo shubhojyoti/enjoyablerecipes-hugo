@@ -1,3 +1,10 @@
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://enjoyable.recipes/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www.enjoyable.recipes [NC]
+RewriteRule ^(.*)$ https://enjoyable.recipes/$1 [L,R=301]
+
+
 RewriteRule ^tag/(.*)$ https://enjoyable.recipes/ingredients/$1 [R=301,L]
 RewriteRule ^recipecourses/maincourse/ https://enjoyable.recipes/recipecourses/main-course/ [R=301,L]
 RewriteRule ^specialrecipes/lowcarb/ https://enjoyable.recipes/specialrecipes/low-carb/ [R=301,L]

@@ -1,6 +1,6 @@
 ---
 author: Shubhojyoti Bhattacharya
-date: 2012-10-30T03:50:37+50:30
+date: 2012-10-30T03:50:37+05:30
 slug: goodbye-feedburner-hello-feedblitz
 title: Goodbye Feedburner, Hello Feedblitz
 ---

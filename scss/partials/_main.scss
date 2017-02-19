@@ -352,6 +352,10 @@ footer {
     }
 }
 
+#backtotopbutton {
+    display: none;
+}
+
 /* Media Queries */
 /* For small and medium screen remove the Top navigations and push the footer social */
 @media only screen and (max-width: 64em) {

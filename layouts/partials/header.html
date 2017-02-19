@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="https://recipescdn.shubhojyoti.info/assets/images/er_logo_small1.png" type="image/x-icon" />
+    <link rel="canonical" href="{{ .Permalink }}">
     <title>
         {{ if and (eq .Kind "section") (eq (singularize (lower .Title)) "offthemenu") }}
         Off the Menu - Enjoyable Recipes
@@ -15,10 +16,26 @@
         {{ if .IsHome }}
         {{ .Title }}
         {{ else }}
+        {{ if eq .Kind "taxonomyTerm" }}
+        {{ if eq .Data.Plural "specialrecipes" }}
+        Special Recipes - Enjoyable Recipes
+        {{ else }}
+        {{ if eq .Data.Plural "recipecourses" }}
+        Recipe Courses - Enjoyable Recipes
+        {{ else }}
+        {{ if eq .Data.Plural "recipetypes" }}
+        Recipe Types - Enjoyable Recipes
+        {{ else }}
+        {{ .Title }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+        {{ else }}
         {{ if eq .Kind "taxonomy"}}
         {{ if eq .Title "Moms Kitchen"}}Mom's Kichen{{else}}{{ .Title | singularize }} Recipes{{end}} - Enjoyable Recipes
         {{ else }}
         {{ .Title }} - Enjoyable Recipes
+        {{ end }}
         {{ end }}
         {{ end }}
         {{ end }}
@@ -47,11 +64,25 @@
                     </div>
                 </div>
             </div>
-            <div class="prisocial large-6 show-for-large columns align-self-middle">
+            <!-- <div class="prisocial large-6 show-for-large columns align-self-middle">
                     <a href="https://www.facebook.com/enjoyablerecipes" title="Like us on Facebook"><span class="fa fa-facebook fa-lg fa-fw"></span></a>
                     <a href="https://twitter.com/enjoyablerecipe" title="Follow us on Twitter"><span class="fa fa-twitter fa-lg fa-fw"></span></a>
                     <a href="https://plus.google.com/+Enjoyablerecipes/" title="Join our Google Circle"><span class="fa fa-google-plus fa-lg fa-fw"></span></a>
                     <a href="/feed/" title="Subscribe to our RSS Feed"><span class="fa fa-rss fa-lg fa-fw"></span></a>
+            </div> -->
+            <div class="searchwidget large-5 show-for-large align-self-bottom">
+                <div class="topsearch">
+                    <form id="form2_search" action="/search/" method="get">
+                        <div class="row collapse align-right">
+                            <div class="large-8 columns">
+                                <input id="form2_q" name="q" placeholder="Search this Blog" type="search"/>
+                            </div>
+                            <div class="large-3 columns">
+                                <input class="button searchbox searchbutton" value="Search" type="submit"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </header>
 

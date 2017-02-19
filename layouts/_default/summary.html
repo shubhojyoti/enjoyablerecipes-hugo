@@ -25,7 +25,7 @@
                                         <address><span class="fa fa-user fa-fw"></span><a href="/about" property="author" vocab="http://schema.org/" typeof="Person"><span property="givenName">{{ index $nameParts 0 }}</span> <span property="familyName">{{ index $nameParts 1 }}</span><meta property="url" content="/about"></a></address>
                                         <div>
                                             <span class="fa fa-comment-o fa-fw"></span>
-                                            <a href="#commentsection">Leave a comment</a>
+                                            <a href="{{ .Permalink }}#commentsection">Leave a comment</a>
                                         </div>
                                     </div>
                                 </aside>

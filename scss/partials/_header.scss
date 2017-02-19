@@ -25,35 +25,6 @@
     }
 }
 
-.prisocial {
-    bottom: 0;
-    right: 0;
-    padding: 0;
-    text-align: right;
-    padding-right: 2em;
-
-    a {
-        padding: 0.35em 0.25em;
-        border: 1px solid #541c02;
-        border-radius: 50%;
-
-        &:link, &:visited {
-            display: inline-block;
-            font-size: 1em;
-            margin-right: 10px;
-        }
-
-        &:hover {
-            color: #eeb188;
-            background-color: #541c02;
-        }
-
-        span {
-            text-align: center;
-        }
-    }
-}
-
 /* Top Navigation */
 .mytopnav {
     background: #541c02 url(https://recipescdn.shubhojyoti.info/assets/images/primarynavribbon.png) repeat-x;
@@ -88,6 +59,30 @@
             padding-left: 0;
         }
     }
+}
+
+/* Header Search */
+.searchwidget {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.topsearch {
+    margin-top: 1.5em;
+    padding: 1em;
+    text-align: right;
+}
+
+.topsearch .searchbox {
+    height: 2.5rem !important;
+    border-radius: 0;
+}
+
+.searchbutton {
+    font-size: 0.8em;
+    padding: 0.97em;
+    color: #fff;
+    width: 100%;
 }
 
 @media only screen and (max-width: 64em) {

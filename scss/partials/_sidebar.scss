@@ -85,29 +85,6 @@
     }
 }
 
-/* Sidebar - 2 Search */
-.searchwidget {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}
-
-.topsearch {
-    margin-top: 1.5em;
-    padding: 1em;
-}
-
-.topsearch .searchbox {
-    height: 2.5rem !important;
-    border-radius: 0;
-}
-
-.searchbutton {
-    font-size: 0.8em;
-    padding: 0.97em;
-    color: #fff;
-    width: 100%;
-}
-
 .tagcloud {
     li {
         display: inline-block;
@@ -129,6 +106,38 @@
 
         &:hover {
             color: #000000;
+        }
+    }
+}
+
+.prisocial {
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    text-align: center;
+
+    // padding-right: 2em;
+
+    a {
+        padding: 0.35em 0.25em;
+        border: 1px solid #541c02;
+        border-radius: 50%;
+        background-color: #541c02;
+        color: #eeb188;
+
+        &:link, &:visited {
+            display: inline-block;
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+
+        &:hover {
+            color: #000;
+            background-color: #F5F8E2;
+        }
+
+        span {
+            text-align: center;
         }
     }
 }
