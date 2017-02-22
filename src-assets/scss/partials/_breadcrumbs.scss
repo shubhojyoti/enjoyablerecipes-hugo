@@ -3,17 +3,16 @@
 }
 
 .articlecontainer > .breadcrumb-area {
-    margin-top: 1.5em;
-    margin-bottom: 0 !important;
+    margin-bottom: 0.5em !important;
 }
 
 @media only screen and (min-width: 40.063em) {
     .breadcrumb-area {
         display: block;
-        margin: 0 0 2em;
+        margin: 0 0 0.5em;
 
         //background-color: #F5F8E2;
-        border: 1px solid #EEE1BE;
+
     }
 
     .breadcrumb-trail {

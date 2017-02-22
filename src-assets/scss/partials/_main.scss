@@ -18,13 +18,17 @@
 }
 
 .ind-post {
-    background: url('https://recipescdn.shubhojyoti.info/assets/images/divider.png') bottom center no-repeat;
-    margin: 1.5em 0;
+    background: url('/assets/images/divider.png') bottom center no-repeat;
+    margin: 0;
     padding-bottom: 1.5em;
 }
 
 #recipemaincontent {
     outline: none;
+
+    &:first-child {
+        margin-top: 0 !important;
+    }
 }
 
 .content-post {
@@ -76,7 +80,7 @@
     .row .row & {
         @extend %commonmeta;
 
-        margin: 1em 0 0;
+        margin: 0;
     }
 }
 
@@ -100,6 +104,10 @@
     }
 }
 
+.ind-post.list-page {
+    margin-top: 1em;
+}
+
 .catmeta {
     padding: 0 1em;
 
@@ -111,7 +119,8 @@
         border: 1px solid #DBDAA3;
         font-size: 0.8em;
         float: left;
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
     }
 
     a:hover {
@@ -237,6 +246,7 @@ footer {
 
 .singletitle {
     color: $color-body-link;
+    margin-bottom: 0;
 }
 
 .extratext {
@@ -249,7 +259,7 @@ footer {
 
 /* Archive Recipe Image Lists */
 #recentrecipes {
-    background: url('https://recipescdn.shubhojyoti.info/assets/images/divider.png') bottom center no-repeat;
+    background: url('/assets/images/divider.png') bottom center no-repeat;
     padding-bottom: 1em;
     margin-bottom: 3em;
 }
@@ -354,6 +364,45 @@ footer {
 
 #backtotopbutton {
     display: none;
+}
+
+/* Header Search */
+.searchwidget {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 1em;
+}
+
+.topsearch {
+    margin-top: 1.5em;
+    padding: 1em;
+    text-align: right;
+}
+
+.topsearch .searchbox {
+    height: 2.5rem !important;
+    border-radius: 0;
+}
+
+#search-input {
+    background: $color-body;
+    border: 1px solid #EEE1BE;
+    border-radius: 0;
+    font-size: 0.8em;
+
+    // border-bottom: 2px solid transparent;
+    box-shadow: none;
+
+    &:active, &:focus {
+        border-color: #800000;
+    }
+}
+
+.searchbutton {
+    font-size: 0.8em;
+    padding: 0.97em;
+    color: #fff;
+    width: 100%;
 }
 
 /* Media Queries */

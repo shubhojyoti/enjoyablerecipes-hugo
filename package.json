@@ -1,0 +1,20 @@
+{
+    "name": "enjoyablerecipes",
+    "version": "1.0.0",
+    "description": "Enjoyable Recipes site",
+    "main": "index.js",
+    "author": "Shubhojyoti Bhattacharya",
+    "license": "MIT",
+    "devDependencies": {
+        "event-stream": "^3.3.4",
+        "gulp-autoprefixer": "^3.1.1",
+        "gulp-sass": "^3.1.0",
+        "run-sequence": "^1.2.2"
+    },
+    "dependencies": {
+        "del": "^2.2.2",
+        "gulp": "^3.9.1",
+        "gulp-rename": "^1.2.2",
+        "gulp-sourcemaps": "^2.4.1"
+    }
+}

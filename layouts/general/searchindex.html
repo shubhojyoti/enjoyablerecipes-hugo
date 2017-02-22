@@ -1,0 +1,26 @@
+{{ $.Scratch.Add "searchindex" slice -}}
+{{ range .Site.Pages }}
+{{ if and (not (eq .Title "Search")) (not (eq .Title "allposts")) (not (eq .Title "searchindex")) (not (eq .Title "Blog")) (not (eq .Kind "section")) (not (eq .Kind "taxonomyTerm")) }}
+{{ $.Scratch.Set "rank" "1" }}
+{{ if .IsPage }}
+{{ if eq .Section "recipe" }}
+{{ $.Scratch.Set "rank" "100" }}
+{{ else }}
+{{ if eq .Section "offthemenu" }}
+{{ $.Scratch.Set "rank" "0" }}
+{{ else }}
+{{ $.Scratch.Set "rank" "70" }}
+{{ end }}
+{{ end }}
+{{ else }}
+{{ if eq .Kind "taxonomy"}}
+{{ if or (eq .Title "Moms Kitchen") (eq .Title "Low Carb") }}
+{{ $.Scratch.Set "rank" "60" }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{ $rank := $.Scratch.Get "rank" }}
+{{ $.Scratch.Add "searchindex" (dict "objectID" (time .Date).Unix "id" .Title "url" .Permalink "desc" .Params.subtitle "image" .Params.recipeimage "typeofpage" .Type "recipeType" .Params.recipetypes "recipeCourses" .Params.recipeCourses "recipeCategories" .Params.categories "recipeIngredients" .Params.ingredients "priority" $rank "text" .Plain ) }}
+{{ end }}
+{{ end }}
+{{ $.Scratch.Get "searchindex" | jsonify }}

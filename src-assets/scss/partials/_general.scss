@@ -14,7 +14,7 @@
 //////////////////////////////////////////////////////////////////////////////
 @font-face {
     font-family: 'Aleo_Light';
-    src: url('https://recipescdn.shubhojyoti.info/assets/fonts/Aleo-Light.woff') format('woff');
+    src: url('/assets/fonts/Aleo-Light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -32,7 +32,7 @@ html {
 }
 
 body {
-    background: $color-body url(https://recipescdn.shubhojyoti.info/assets/images/back.jpg) top center no-repeat;
+    background: $color-body url(/assets/images/back.jpg) top center no-repeat;
     font-family: $font-body;
     font-size: 1rem;
     min-height: 100%;

@@ -42,6 +42,7 @@
             }
             qtext = "Here are your search results for \"" + Q_PARAMS + "\"";
         }
+        console.log(qtext);
         $(".searchresultspage .content-post p:first-child").html(qtext);
     };
 
@@ -78,7 +79,7 @@
 
     var generatePagination = function generatePagination() {
         if (CURR_TOTAL_PAGES > 1) {
-            var page_div = $(".receivedsearch .wp-pagenavi");
+            var page_div = $(".wp-pagenavi");
             var pagi_html = "";
             if (CURR_PAGE_NO === 0 && CURR_TOTAL_PAGES > 0) {
                 CURR_PAGE_NO = 1;
@@ -125,7 +126,7 @@
     };
 
     var getSearchResults = function getAllRecipes() {
-        var url = '/boomboomisgood/searchtest6.php';
+        var url = '/test.json';
         // var url = 'https://www.googleapis.com/customsearch/v1?q=Paneer+Sweet&cx=013661604466927761390:v6ucpipysmm&key=AIzaSyCbHP_dsEH_LAsGm261_GQhZb3_2URz3wY';
         var request = {
                 url : url,

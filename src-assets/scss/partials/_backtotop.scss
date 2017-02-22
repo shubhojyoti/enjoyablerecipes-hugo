@@ -3,13 +3,20 @@
     position: fixed;
     right: 0.9em;
     bottom: 0.4em;
-    background-color: #ffffff;
+    background-color: #333333;
     border-radius: 1px;
-    border: 1px solid #ccc;
+
+    // border: 1px solid #ccc;
 
     a {
         display: inherit;
         padding: 0.35em;
+        color: orange;
+        font-size: 1em;
+
+        &:link, &:visited {
+            color: orange;
+        }
 
         img {
             height: 28px;

@@ -27,7 +27,7 @@
 
 /* Top Navigation */
 .mytopnav {
-    background: #541c02 url(https://recipescdn.shubhojyoti.info/assets/images/primarynavribbon.png) repeat-x;
+    background: #541c02 url(/assets/images/primarynavribbon.png) repeat-x;
     height: 49px;
     position: relative;
     z-index: 2;
@@ -59,30 +59,6 @@
             padding-left: 0;
         }
     }
-}
-
-/* Header Search */
-.searchwidget {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}
-
-.topsearch {
-    margin-top: 1.5em;
-    padding: 1em;
-    text-align: right;
-}
-
-.topsearch .searchbox {
-    height: 2.5rem !important;
-    border-radius: 0;
-}
-
-.searchbutton {
-    font-size: 0.8em;
-    padding: 0.97em;
-    color: #fff;
-    width: 100%;
 }
 
 @media only screen and (max-width: 64em) {

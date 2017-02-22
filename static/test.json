@@ -1,0 +1,446 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Paneer Sweet",
+        "totalResults": "65",
+        "searchTerms": "Paneer Sweet",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "013661604466927761390:v6ucpipysmm"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Paneer Sweet",
+        "totalResults": "65",
+        "searchTerms": "Paneer Sweet",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "013661604466927761390:v6ucpipysmm"
+      }
+    ]
+  },
+  "context": {
+    "title": "Enjoyable recipes"
+  },
+  "searchInformation": {
+    "searchTime": 0.374045,
+    "formattedSearchTime": "0.37",
+    "totalResults": "65",
+    "formattedTotalResults": "65"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Enjoyable Recipes - Simple everyday recipes with a touch of ...",
+      "htmlTitle": "Enjoyable Recipes - Simple everyday recipes with a touch of ...",
+      "link": "https://enjoyablerecipes.com/",
+      "displayLink": "enjoyablerecipes.com",
+      "snippet": "Sweet pancakes with coconut filling. January 15, 2015. boomboom · Leave a \ncomment. Today is Makar Sankranti, the day we celebrate the arrival of spring.",
+      "htmlSnippet": "<b>Sweet</b> pancakes with coconut filling. January 15, 2015. boomboom &middot; Leave a <br>\ncomment. Today is Makar Sankranti, the day we celebrate the arrival of spring.",
+      "cacheId": "lalTiHMeao0J",
+      "formattedUrl": "https://enjoyablerecipes.com/",
+      "htmlFormattedUrl": "https://enjoyablerecipes.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "width": "367",
+            "height": "137",
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLc_wt4G4znUZR4l75wgVPFzodtHo3mcPO6PLjMGXXO6l9di7e2PkN1Bw"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:type": "website",
+            "og:title": "Enjoyable Recipes - Simple everyday recipes with a touch of Bengali-ness",
+            "og:url": "https://enjoyablerecipes.com",
+            "og:site_name": "Enjoyable Recipes",
+            "article:publisher": "http://www.facebook.com/enjoyablerecipes/",
+            "fb:admins": "100000095200913"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://d269owlvbwd8nq.cloudfront.net/wp-content/uploads/2015/01/16011258/patishapta-699x262.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Veg Archives - Enjoyable Recipes",
+      "htmlTitle": "Veg Archives - Enjoyable Recipes",
+      "link": "https://enjoyablerecipes.com/recipetypes/vegetarian/",
+      "displayLink": "enjoyablerecipes.com",
+      "snippet": "Sweet pancakes with coconut filling. January 15, 2015. boomboom · Leave a \ncomment. Today is Makar Sankranti, the day we celebrate the arrival of spring.",
+      "htmlSnippet": "<b>Sweet</b> pancakes with coconut filling. January 15, 2015. boomboom &middot; Leave a <br>\ncomment. Today is Makar Sankranti, the day we celebrate the arrival of spring.",
+      "cacheId": "iT1H5bP20QYJ",
+      "formattedUrl": "https://enjoyablerecipes.com/recipetypes/vegetarian/",
+      "htmlFormattedUrl": "https://enjoyablerecipes.com/recipetypes/vegetarian/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "width": "367",
+            "height": "137",
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLc_wt4G4znUZR4l75wgVPFzodtHo3mcPO6PLjMGXXO6l9di7e2PkN1Bw"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:type": "object",
+            "og:title": "Veg Archives - Enjoyable Recipes",
+            "og:url": "https://enjoyablerecipes.com/recipetypes/vegetarian/",
+            "og:site_name": "Enjoyable Recipes",
+            "article:publisher": "http://www.facebook.com/enjoyablerecipes/",
+            "fb:admins": "100000095200913"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://d269owlvbwd8nq.cloudfront.net/wp-content/uploads/2015/01/16011258/patishapta-699x262.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "cashewnuts Archives - Enjoyable Recipes",
+      "htmlTitle": "cashewnuts Archives - Enjoyable Recipes",
+      "link": "https://enjoyablerecipes.com/tag/cashewnuts/",
+      "displayLink": "enjoyablerecipes.com",
+      "snippet": "Jul 24, 2012 ... My mom cooks wonderful mutton. Khashir Mangsho (Goat meat) is a popular \ndelicacy in Bengal and is especially served during festivals.",
+      "htmlSnippet": "Jul 24, 2012 <b>...</b> My mom cooks wonderful mutton. Khashir Mangsho (Goat meat) is a popular <br>\ndelicacy in Bengal and is especially served during festivals.",
+      "cacheId": "ZEZR3dyCKm0J",
+      "formattedUrl": "https://enjoyablerecipes.com/tag/cashewnuts/",
+      "htmlFormattedUrl": "https://enjoyablerecipes.com/tag/cashewnuts/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "width": "367",
+            "height": "137",
+            "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSQAJjD4KvL1IUui7eTCvyw-rZeW5hXivVi9mpBly9Zy4DHKjtMVd7VS-M"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:type": "object",
+            "og:title": "cashewnuts Archives - Enjoyable Recipes",
+            "og:url": "https://enjoyablerecipes.com/tag/cashewnuts/",
+            "og:site_name": "Enjoyable Recipes",
+            "article:publisher": "http://www.facebook.com/enjoyablerecipes/",
+            "fb:admins": "100000095200913"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://d269owlvbwd8nq.cloudfront.net/wp-content/uploads/2015/01/MuttonGravywithVegetables-699x262.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paneer Archives - Enjoyable Recipes",
+      "htmlTitle": "<b>Paneer</b> Archives - Enjoyable Recipes",
+      "link": "https://enjoyablerecipes.com/recipes/paneer/",
+      "displayLink": "enjoyablerecipes.com",
+      "snippet": "Nov 14, 2012 ... If you are a follower of this blog, you will know that paneer is one of my favorite \ningredients. I love paneer as much as I love chicken. I always try ...",
+      "htmlSnippet": "Nov 14, 2012 <b>...</b> If you are a follower of this blog, you will know that <b>paneer</b> is one of my favorite <br>\ningredients. I love <b>paneer</b> as much as I love chicken. I always try&nbsp;...",
+      "cacheId": "HfglvE30BekJ",
+      "formattedUrl": "https://enjoyablerecipes.com/recipes/paneer/",
+      "htmlFormattedUrl": "https://enjoyablerecipes.com/recipes/<b>paneer</b>/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "width": "367",
+            "height": "137",
+            "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxoru6b08sx4--o7k2OZbii8uTpWygPysV5BLebb9QLKlLkk3SIr3eKNzX"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:type": "object",
+            "og:title": "Paneer Archives - Enjoyable Recipes",
+            "og:url": "https://enjoyablerecipes.com/recipes/paneer/",
+            "og:site_name": "Enjoyable Recipes",
+            "article:publisher": "http://www.facebook.com/enjoyablerecipes/",
+            "fb:admins": "100000095200913"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://d269owlvbwd8nq.cloudfront.net/wp-content/uploads/2015/01/kadai_paneer_big-699x262.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Kadai Paneer - Enjoyable Recipes",
+      "htmlTitle": "Kadai <b>Paneer</b> - Enjoyable Recipes",
+      "link": "https://enjoyablerecipes.com/recipes/vegetables/kadai-paneer-cottage-cheese-spicy-tomato-gravy/",
+      "displayLink": "enjoyablerecipes.com",
+      "snippet": "Nov 14, 2012 ... If you are a follower of this blog, you will know that paneer is one of my favorite \ningredients. I love paneer as much as I love chicken. I always try ...",
+      "htmlSnippet": "Nov 14, 2012 <b>...</b> If you are a follower of this blog, you will know that <b>paneer</b> is one of my favorite <br>\ningredients. I love <b>paneer</b> as much as I love chicken. I always try&nbsp;...",
+      "cacheId": "azgdOY29E8wJ",
+      "formattedUrl": "https://enjoyablerecipes.com/.../kadai-paneer-cottage-cheese-spicy-tomato- gravy/",
+      "htmlFormattedUrl": "https://enjoyablerecipes.com/.../kadai-<b>paneer</b>-cottage-cheese-spicy-tomato- gravy/",
+      "pagemap": {
+        "hcard": [
+          {
+            "fn": "Tamilaarsi Sasikumar",
+            "url": "http://tamilsasikitchen.blogspot.com/",
+            "url_text": "Tamilaarsi Sasikumar",
+            "photo": "https://secure.gravatar.com/avatar/83f3e480e137694193a699508d88308f?s=32&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&r=G"
+          },
+          {
+            "fn": "boomboom",
+            "nickname": "boomboom",
+            "photo": "https://secure.gravatar.com/avatar/67a2b8d8354901eeeff661b7b9f161a3?s=32&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&r=G"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "286",
+            "height": "176",
+            "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkGAxep76_Rk6a3fzsr1sUUO6QOwCH1fEeICcKokaXP4aesWbp73E0FWQ"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:type": "article",
+            "og:title": "Kadai Paneer - Enjoyable Recipes",
+            "og:description": "If you are a follower of this blog, you will know that paneer is one of my favorite ingredients. I love paneer as much as I love chicken. I always try to experiment with different paneer dishes. However I have rarely tried to create a well-known paneer dish like Kadai Paneer. Since today is our weekly vegetarian day, I wanted to cook a paneer dish. I looked through some cookbooks and decided on creating a Kadai Paneer. The way I cook from a cookbook is I jot down all the ingredients, read through the steps multiple times and then try …",
+            "og:url": "https://enjoyablerecipes.com/recipes/vegetables/kadai-paneer-cottage-cheese-spicy-tomato-gravy/",
+            "og:site_name": "Enjoyable Recipes",
+            "article:publisher": "http://www.facebook.com/enjoyablerecipes/",
+            "article:tag": "Capsicum",
+            "article:section": "Paneer",
+            "article:published_time": "2012-11-14T08:50:04+00:00",
+            "article:modified_time": "2015-01-03T20:08:12+00:00",
+            "og:updated_time": "2015-01-03T20:08:12+00:00",
+            "fb:admins": "100000095200913",
+            "og:image": "https://d269owlvbwd8nq.cloudfront.net/wp-content/uploads/2015/01/kadai_paneer_big.png"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://d269owlvbwd8nq.cloudfront.net/wp-content/uploads/2015/01/kadai_paneer_big.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Tomato Archives - Enjoyable Recipes",
+      "htmlTitle": "Tomato Archives - Enjoyable Recipes",
+      "link": "https://enjoyablerecipes.com/tag/tomato/",
+      "displayLink": "enjoyablerecipes.com",
+      "snippet": "Nov 14, 2012 ... If you are a follower of this blog, you will know that paneer is one of my favorite \ningredients. I love paneer as much as I love chicken. I always try ...",
+      "htmlSnippet": "Nov 14, 2012 <b>...</b> If you are a follower of this blog, you will know that <b>paneer</b> is one of my favorite <br>\ningredients. I love <b>paneer</b> as much as I love chicken. I always try&nbsp;...",
+      "cacheId": "JZs6k1JewiMJ",
+      "formattedUrl": "https://enjoyablerecipes.com/tag/tomato/",
+      "htmlFormattedUrl": "https://enjoyablerecipes.com/tag/tomato/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "width": "367",
+            "height": "137",
+            "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxoru6b08sx4--o7k2OZbii8uTpWygPysV5BLebb9QLKlLkk3SIr3eKNzX"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:type": "object",
+            "og:title": "Tomato Archives - Enjoyable Recipes",
+            "og:url": "https://enjoyablerecipes.com/tag/tomato/",
+            "og:site_name": "Enjoyable Recipes",
+            "article:publisher": "http://www.facebook.com/enjoyablerecipes/",
+            "fb:admins": "100000095200913"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://d269owlvbwd8nq.cloudfront.net/wp-content/uploads/2015/01/kadai_paneer_big-699x262.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Sweet Archives - Enjoyable Recipes",
+      "htmlTitle": "<b>Sweet</b> Archives - Enjoyable Recipes",
+      "link": "https://enjoyablerecipes.com/recipes/sweet/",
+      "displayLink": "enjoyablerecipes.com",
+      "snippet": "Jan 15, 2015 ... Today is Makar Sankranti, the day we celebrate the arrival of spring. It celebrates \nthe oncoming harvest. Bengalis celebrate this day by ...",
+      "htmlSnippet": "Jan 15, 2015 <b>...</b> Today is Makar Sankranti, the day we celebrate the arrival of spring. It celebrates <br>\nthe oncoming harvest. Bengalis celebrate this day by&nbsp;...",
+      "cacheId": "FXaiSTq2rsoJ",
+      "formattedUrl": "https://enjoyablerecipes.com/recipes/sweet/",
+      "htmlFormattedUrl": "https://enjoyablerecipes.com/recipes/<b>sweet</b>/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "width": "367",
+            "height": "137",
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLc_wt4G4znUZR4l75wgVPFzodtHo3mcPO6PLjMGXXO6l9di7e2PkN1Bw"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:type": "object",
+            "og:title": "Sweet Archives - Enjoyable Recipes",
+            "og:url": "https://enjoyablerecipes.com/recipes/sweet/",
+            "og:site_name": "Enjoyable Recipes",
+            "article:publisher": "http://www.facebook.com/enjoyablerecipes/",
+            "fb:admins": "100000095200913"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://d269owlvbwd8nq.cloudfront.net/wp-content/uploads/2015/01/16011258/patishapta-699x262.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Low Carb Archives - Enjoyable Recipes",
+      "htmlTitle": "Low Carb Archives - Enjoyable Recipes",
+      "link": "https://enjoyablerecipes.com/specialrecipes/lowcarb/",
+      "displayLink": "enjoyablerecipes.com",
+      "snippet": "Nov 14, 2012 ... If you are a follower of this blog, you will know that paneer is one of my favorite \ningredients. I love paneer as much as I love chicken. I always try ...",
+      "htmlSnippet": "Nov 14, 2012 <b>...</b> If you are a follower of this blog, you will know that <b>paneer</b> is one of my favorite <br>\ningredients. I love <b>paneer</b> as much as I love chicken. I always try&nbsp;...",
+      "cacheId": "s9pxTvzrKR0J",
+      "formattedUrl": "https://enjoyablerecipes.com/specialrecipes/lowcarb/",
+      "htmlFormattedUrl": "https://enjoyablerecipes.com/specialrecipes/lowcarb/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "width": "367",
+            "height": "137",
+            "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxoru6b08sx4--o7k2OZbii8uTpWygPysV5BLebb9QLKlLkk3SIr3eKNzX"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:type": "object",
+            "og:title": "Low Carb Archives - Enjoyable Recipes",
+            "og:url": "https://enjoyablerecipes.com/specialrecipes/lowcarb/",
+            "og:site_name": "Enjoyable Recipes",
+            "article:publisher": "http://www.facebook.com/enjoyablerecipes/",
+            "fb:admins": "100000095200913"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://d269owlvbwd8nq.cloudfront.net/wp-content/uploads/2015/01/kadai_paneer_big-699x262.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Peas Archives - Enjoyable Recipes",
+      "htmlTitle": "Peas Archives - Enjoyable Recipes",
+      "link": "https://enjoyablerecipes.com/tag/peas/",
+      "displayLink": "enjoyablerecipes.com",
+      "snippet": "Apr 25, 2012 ... Paneer remains my all time favorite. When I was a kid (I am not one now despite \nwhat my mom wants me to believe), mom always made a ...",
+      "htmlSnippet": "Apr 25, 2012 <b>...</b> <b>Paneer</b> remains my all time favorite. When I was a kid (I am not one now despite <br>\nwhat my mom wants me to believe), mom always made a&nbsp;...",
+      "cacheId": "2gyKMwjy82YJ",
+      "formattedUrl": "https://enjoyablerecipes.com/tag/peas/",
+      "htmlFormattedUrl": "https://enjoyablerecipes.com/tag/peas/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "width": "367",
+            "height": "137",
+            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ43i-KzVt7c1aTIYl8-YR1ESp0hvmjInmIJtTQM5XNxuihJ88W2ShZiyA"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:type": "object",
+            "og:title": "Peas Archives - Enjoyable Recipes",
+            "og:url": "https://enjoyablerecipes.com/tag/peas/",
+            "og:site_name": "Enjoyable Recipes",
+            "article:publisher": "http://www.facebook.com/enjoyablerecipes/",
+            "fb:admins": "100000095200913"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://d269owlvbwd8nq.cloudfront.net/wp-content/uploads/2015/01/MatarPaneer-699x262.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Cauliflower Archives - Enjoyable Recipes",
+      "htmlTitle": "Cauliflower Archives - Enjoyable Recipes",
+      "link": "https://enjoyablerecipes.com/tag/cauliflower/",
+      "displayLink": "enjoyablerecipes.com",
+      "snippet": "Feb 21, 2010 ... Actually in our case we felt hungry :-p So Sumi ran and looked into the fridge and \nthere we had Paneer (Cottage Cheese). Our quickest option ...",
+      "htmlSnippet": "Feb 21, 2010 <b>...</b> Actually in our case we felt hungry :-p So Sumi ran and looked into the fridge and <br>\nthere we had <b>Paneer</b> (Cottage Cheese). Our quickest option&nbsp;...",
+      "cacheId": "Z-pXagz9azIJ",
+      "formattedUrl": "https://enjoyablerecipes.com/tag/cauliflower/",
+      "htmlFormattedUrl": "https://enjoyablerecipes.com/tag/cauliflower/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "width": "367",
+            "height": "137",
+            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoi6ZQIaYgipZbmrHtJJ3EBbUzZSL3OkUaYgWApKvzHBhT6AF2V_ZxXGs"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:type": "object",
+            "og:title": "Cauliflower Archives - Enjoyable Recipes",
+            "og:url": "https://enjoyablerecipes.com/tag/cauliflower/",
+            "og:site_name": "Enjoyable Recipes",
+            "article:publisher": "http://www.facebook.com/enjoyablerecipes/",
+            "fb:admins": "100000095200913"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://d269owlvbwd8nq.cloudfront.net/wp-content/uploads/2015/01/PaneerVegetableDelight-699x262.jpg"
+          }
+        ]
+      }
+    }
+  ]
+}

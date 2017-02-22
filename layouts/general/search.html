@@ -1,0 +1,34 @@
+{{ partial "header.html" . }}
+            <main class="small-16 large-10 columns large-order-2">
+                <h2 class="hide show-for-sr">Search Page</h2>
+                {{ partial "searchinput.html" . }}
+                <div class="articlecontainer">
+                    <section id="recipemaincontent" tabindex="-1">
+                        <article class="post row">
+                            <div class="ind-post small-16 columns">
+                                <div class="row" id="recipemaincontent" tabindex="-1">
+                                    <h3 class="singletitle columns small-12 small-order-2">Search Results</h3>
+                                </div>
+                                <!--* Actual Blog Post Content *-->
+
+                                <div class="content-post" property="description">
+                                    <p class="receivedsearch">Here are your search results.</p>
+                                    <p class="waitingforsearch" style="display: none">Getting your search results. Please wait<span class="gettingwait"></span>
+                                    <div class="receivedsearch">
+                                        <!-- Search Results -->
+                                        <div class="searchresultcontent">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                    <!-- Pagination for Search -->
+                    <div class="wp-pagenavi pager cf">
+                    </div>
+                </div>
+            </main>
+{{ partial "sidebar1.html" . }}
+{{ partial "sidebar2.html" . }}
+{{ partial "offcanvasmenu.html" . }}
+{{ partial "footer.html" . }}

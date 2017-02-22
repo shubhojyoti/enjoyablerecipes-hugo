@@ -1,4 +1,5 @@
 npm_modules
+node_modules
 bower_components
 trash
 Error.log
@@ -11,7 +12,10 @@ Error.log
 dev
 public
 themes
-static/assets/css/*
-static/assets/js/*
-static/assets/fonts/*
-static/assets/images/*
+static/assets/css
+static/assets/js
+static/assets/fonts
+static/assets/images
+src-assets/scss/partials/_font-awesome.scss
+src-assets/scss/partials/foundation
+src-assets/scss/partials/font-awesome
