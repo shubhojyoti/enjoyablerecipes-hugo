@@ -27,34 +27,31 @@ gulp.copy=function(src,dest, base){
         .pipe(gulp.dest(dest));
 };
 
+gulp.task('clean:dev', function () {
+    return del(['./dev']);
+});
+
+gulp.task('clean:public', function () {
+    return del(['./public']);
+});
 
 // Clears the dynamically generated directories inside static
 gulp.task('clean:static:all', function () {
-  return del([
-    './static/assets/css',
-    './static/assets/js',
-    './static/assets/fonts',
-    './static/assets/images'
-  ]);
-});
-
-gulp.task('clean:dev', function () {
-  return del([
-    './dev'
+    return del([
+        './static/assets/css',
+        './static/assets/js',
+        './static/assets/fonts',
+        './static/assets/images'
   ]);
 });
 
 // Clears static/js
 gulp.task('clean:static:js', function () {
-  return del([
-    './static/js/**/*'
-  ]);
+    return del(['./static/js/**/*']);
 });
 // Clears static/css
 gulp.task('clean:static:css', function () {
-  return del([
-    './static/css/**/*'
-  ]);
+    return del(['./static/css/**/*']);
 });
 
 // Compiles Sass to CSS and copies to static/css
@@ -71,6 +68,7 @@ gulp.task('getstyles', function() {
         .pipe(gulp.dest(config.static.css));
 });
 
+// Copy resources to static
 gulp.task('static', function() {
     return es.concat(
         gulp.src('./src-assets/fonts/**/*')
@@ -85,10 +83,9 @@ gulp.task('static', function() {
 });
 
 
-
 // Default gulp task for dev
 gulp.task('default', function(callback) {
-    runSequence(['clean:static:all', 'clean:dev'],
+    runSequence(['clean:static:all', 'clean:dev', 'clean:public'],
                 'static',
                 'getstyles');
 });

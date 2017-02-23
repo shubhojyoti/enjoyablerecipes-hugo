@@ -16,5 +16,11 @@
         "gulp": "^3.9.1",
         "gulp-rename": "^1.2.2",
         "gulp-sourcemaps": "^2.4.1"
+    },
+    "scripts": {
+        "build": "gulp",
+        "hugodev": "hugo serve -d dev -b http://enjoyablerecipes.hugo -w",
+        "hugoprod": "hugo",
+        "dev": "gulp && hugo serve -d dev -b http://enjoyablerecipes.hugo -w"
     }
 }
