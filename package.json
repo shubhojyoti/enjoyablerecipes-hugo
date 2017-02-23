@@ -9,18 +9,28 @@
         "event-stream": "^3.3.4",
         "gulp-autoprefixer": "^3.1.1",
         "gulp-sass": "^3.1.0",
-        "run-sequence": "^1.2.2"
-    },
-    "dependencies": {
+        "run-sequence": "^1.2.2",
+        "babel-preset-es2015": "^6.22.0",
+        "babelify": "^7.3.0",
+        "browserify": "^14.1.0",
         "del": "^2.2.2",
         "gulp": "^3.9.1",
         "gulp-rename": "^1.2.2",
-        "gulp-sourcemaps": "^2.4.1"
+        "gulp-sourcemaps": "^2.4.1",
+        "gulp-uglify": "^2.0.1",
+        "jquery": "^3.1.1",
+        "picturefill": "^3.0.2",
+        "vanilla-lazyload": "^4.0.4",
+        "vinyl-buffer": "^1.0.0",
+        "vinyl-source-stream": "^1.1.0"
     },
     "scripts": {
         "build": "gulp",
+        "recipelistjs": "browserify ./src-assets/js/recipelist.js -t babelify > ./static/assets/js/recipelist.js",
+        "homepagejs": "browserify ./src-assets/js/homepage.js -t babelify > ./static/assets/js/homepage.js",
+        "commonjs": "browserify ./src-assets/js/scripts.js -t babelify > ./static/assets/js/scripts.js",
         "hugodev": "hugo serve -d dev -b http://enjoyablerecipes.hugo -w",
         "hugoprod": "hugo",
-        "dev": "gulp && hugo serve -d dev -b http://enjoyablerecipes.hugo -w"
+        "dev": "gulp && sleep 5 && hugo serve -d dev -b http://enjoyablerecipes.hugo -w"
     }
 }

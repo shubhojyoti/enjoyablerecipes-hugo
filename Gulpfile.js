@@ -1,18 +1,25 @@
-var     gulp = require('gulp'),
+let     gulp = require('gulp'),
          del = require('del'),
  runSequence = require('run-sequence'),
           es = require('event-stream'),
       rename = require('gulp-rename'),
         sass = require('gulp-sass'),
 autoprefixer = require('gulp-autoprefixer'),
-  sourcemaps = require('gulp-sourcemaps');
+  sourcemaps = require('gulp-sourcemaps'),
+  browserify = require('browserify'),
+    babelify = require('babelify'),
+      source = require('vinyl-source-stream'),
+      buffer = require('vinyl-buffer'),
+      uglify = require('gulp-uglify');
 
-var config = {
-    'fontawesome_fonts': './node_modules/font-awesome-sass/assets/fonts/font-awesome',
-    'fontawesome_sass': './node_modules/font-awesome-sass/assets/stylesheets',
-    'foundation_sass': './node_modules/foundation-sites/scss',
+let config = {
     'main_scss': './src-assets/scss/style.scss',
-    'f_modules_used': './src-assets/scss/partials/_recipesfoundation.scss',
+    'source': {
+        'css': './src-assets/css',
+        'js': './src-assets/js',
+        'images': './src-assets/images',
+        'fonts': './src-assets/fonts'
+    },
     'static': {
         'css': './static/assets/css',
         'js': './static/assets/js',
@@ -37,25 +44,21 @@ gulp.task('clean:public', function () {
 
 // Clears the dynamically generated directories inside static
 gulp.task('clean:static:all', function () {
-    return del([
-        './static/assets/css',
-        './static/assets/js',
-        './static/assets/fonts',
-        './static/assets/images'
-  ]);
+    return del([config.static.css, config.static.js, config.static.fonts,
+                config.static.images]);
 });
 
 // Clears static/js
 gulp.task('clean:static:js', function () {
-    return del(['./static/js/**/*']);
+    return del([config.static.js + '/**/*']);
 });
 // Clears static/css
 gulp.task('clean:static:css', function () {
-    return del(['./static/css/**/*']);
+    return del([config.static.css + '/**/*']);
 });
 
 // Compiles Sass to CSS and copies to static/css
-gulp.task('getstyles', function() {
+gulp.task('build:css:dev', function() {
     return gulp.src(config.main_scss)
         .pipe(sourcemaps.init())
         .pipe(sass())
@@ -68,24 +71,80 @@ gulp.task('getstyles', function() {
         .pipe(gulp.dest(config.static.css));
 });
 
+// Builds JS
+gulp.task('build:js:dev', function () {
+    return es.concat(
+        browserify({entries: config.source.js + '/recipelist.js', debug: true})
+            .transform("babelify", { presets: ["es2015"] })
+            .bundle()
+            .pipe(source('recipelist.js'))
+            .pipe(buffer())
+            .pipe(sourcemaps.init())
+            .pipe(sourcemaps.write('.'))
+            .pipe(gulp.dest(config.static.js)),
+        browserify({entries: config.source.js + '/homepage.js', debug: true})
+            .transform("babelify", { presets: ["es2015"] })
+            .bundle()
+            .pipe(source('homepage.js'))
+            .pipe(buffer())
+            .pipe(sourcemaps.init())
+            .pipe(sourcemaps.write('.'))
+            .pipe(gulp.dest(config.static.js)),
+        browserify({entries: config.source.js + '/scripts.js', debug: true})
+            .transform("babelify", { presets: ["es2015"] })
+            .bundle()
+            .pipe(source('scripts.js'))
+            .pipe(buffer())
+            .pipe(sourcemaps.init())
+            .pipe(sourcemaps.write('.'))
+            .pipe(gulp.dest(config.static.js))
+    );
+});
+
+gulp.task('build:js:prod', function () {
+    return es.concat(
+        browserify({entries: config.source.js + '/recipelist.js', debug: true})
+            .transform("babelify", { presets: ["es2015"] })
+            .bundle()
+            .pipe(source('recipelist.js'))
+            .pipe(buffer())
+            .pipe(uglify())
+            .pipe(gulp.dest(config.static.js)),
+        browserify({entries: config.source.js + '/homepage.js', debug: true})
+            .transform("babelify", { presets: ["es2015"] })
+            .bundle()
+            .pipe(source('homepage.js'))
+            .pipe(buffer())
+            .pipe(uglify())
+            .pipe(gulp.dest(config.static.js)),
+        browserify({entries: config.source.js + '/scripts.js', debug: true})
+            .transform("babelify", { presets: ["es2015"] })
+            .bundle()
+            .pipe(source('scripts.js'))
+            .pipe(buffer())
+            .pipe(uglify())
+            .pipe(gulp.dest(config.static.js))
+    );
+});
+
 // Copy resources to static
 gulp.task('static', function() {
     return es.concat(
-        gulp.src('./src-assets/fonts/**/*')
+        gulp.src(config.source.fonts + '/**/*')
             .pipe(gulp.dest(config.static.fonts)),
-        gulp.src('./src-assets/images/**/*')
+        gulp.src(config.source.images + '/**/*')
             .pipe(gulp.dest(config.static.images)),
-        gulp.src('./src-assets/js/**/*')
-            .pipe(gulp.dest(config.static.js)),
-        gulp.src('./src-assets/css/**/*')
+        gulp.src(config.source.css + '/**/*')
             .pipe(gulp.dest(config.static.css))
     );
 });
 
+gulp.task('clean', ['clean:static:all', 'clean:dev', 'clean:public']);
+
 
 // Default gulp task for dev
 gulp.task('default', function(callback) {
-    runSequence(['clean:static:all', 'clean:dev', 'clean:public'],
+    runSequence('clean',
                 'static',
-                'getstyles');
+                ['build:css:dev', 'build:js:dev']);
 });
