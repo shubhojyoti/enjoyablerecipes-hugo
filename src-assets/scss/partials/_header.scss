@@ -29,7 +29,8 @@
 .mytopnav {
     background: #541c02 url(/assets/images/primarynavribbon.png) repeat-x;
     height: 49px;
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 2;
 
     ul {

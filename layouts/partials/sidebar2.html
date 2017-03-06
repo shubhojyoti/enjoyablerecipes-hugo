@@ -30,14 +30,7 @@
                     <h3>Tags</h3>
                     <ul class="tagcloud">
                         {{ range $name, $taxonomy := .Site.Taxonomies.ingredients }}
-                        {{ $nameparts := (split (humanize $name) " ")}}
-                        {{ $.Scratch.Set "finaltag" " "}}
-                        {{ range $nameparts }}
-                        {{ $.Scratch.Add "finaltag" (humanize .) }}
-                        {{ $.Scratch.Add "finaltag" " "}}
-                        {{ end }}
-                        {{ $recipetag := $.Scratch.Get "finaltag" }}
-                        <li class="tag"><a href="/ingredients/{{ $name | urlize }}">{{ $recipetag | replaceRE "^ (.*) $" "$1"}}</a></li>
+                        <li class="tag"><a href="/ingredients/{{ $name | urlize }}/">{{ $name | humanize | title }}</a></li>
                         {{ end }}
                     </ul>
                 </div>

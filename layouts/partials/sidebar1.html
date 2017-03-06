@@ -5,14 +5,7 @@
                     <h3>By Courses</h3>
                     <ul>
                         {{ range $name, $taxonomy := .Site.Taxonomies.recipecourses }}
-                        {{ $nameparts := (split (humanize $name) " ")}}
-                        {{ $.Scratch.Set "finaltag" " "}}
-                        {{ range $nameparts }}
-                        {{ $.Scratch.Add "finaltag" (humanize .) }}
-                        {{ $.Scratch.Add "finaltag" " "}}
-                        {{ end }}
-                        {{ $recipetag := $.Scratch.Get "finaltag" }}
-                        <li><a href="/recipecourses/{{ $name | urlize }}">{{ $recipetag | replaceRE "^ (.*) $" "$1"}}</a></li>
+                        <li><a href="/recipecourses/{{ $name | urlize }}/">{{ $name | humanize | title }}</a></li>
                         {{ end }}
                     </ul>
                 </div>
@@ -20,14 +13,7 @@
                     <h3>By Types</h3>
                     <ul>
                         {{ range $name, $taxonomy := .Site.Taxonomies.recipetypes }}
-                        {{ $nameparts := (split (humanize $name) " ")}}
-                        {{ $.Scratch.Set "finaltag" " "}}
-                        {{ range $nameparts }}
-                        {{ $.Scratch.Add "finaltag" (humanize .) }}
-                        {{ $.Scratch.Add "finaltag" " "}}
-                        {{ end }}
-                        {{ $recipetag := $.Scratch.Get "finaltag" }}
-                        <li><a href="/recipetypes/{{ $name | urlize }}">{{ $recipetag | replaceRE "^ (.*) $" "$1"}}</a></li>
+                        <li><a href="/recipetypes/{{ $name | urlize }}/">{{ $name | humanize | title }}</a></li>
                         {{ end }}
                     </ul>
 
@@ -36,14 +22,7 @@
                     <h3>By Categories</h3>
                     <ul>
                         {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-                        {{ $nameparts := (split (humanize $name) " ")}}
-                        {{ $.Scratch.Set "finaltag" " "}}
-                        {{ range $nameparts }}
-                        {{ $.Scratch.Add "finaltag" (humanize .) }}
-                        {{ $.Scratch.Add "finaltag" " "}}
-                        {{ end }}
-                        {{ $recipetag := $.Scratch.Get "finaltag" }}
-                        <li><a href="/categories/{{ $name | urlize }}">{{ $recipetag | replaceRE "^ (.*) $" "$1"}}</a></li>
+                        <li><a href="/categories/{{ $name | urlize }}/">{{ $name | humanize | title }}</a></li>
                         {{ end }}
                     </ul>
                 </div>

@@ -1,5 +1,5 @@
 {{ $.Scratch.Add "allrecipes" slice -}}
-{{ range where .Site.Pages "Type" "in"  ("recipe")}}
+{{ range where .Site.Pages "Type" "in"  ("recipe")}}{{ if ne .Kind "section"}}
 {{ $.Scratch.Add "allrecipes" (dict "recipeTitle" .Title "recipeDateTime" (.Date.Format "2006-01-02 15:04:05") "recipeUrl" .Permalink "recipeShortDesc" .Params.subtitle "recipeMainImage" .Params.recipeimage ) }}
-{{ end }}
+{{ end }}{{end}}
 {{ $.Scratch.Get "allrecipes" | jsonify }}

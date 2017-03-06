@@ -45,7 +45,7 @@ let imageView = function imageView(data) {
             currRecipe.recipeTitle + '"></a>' +
             '<div class="recipelisttitle">' +
             '<p class="recipename"><a href="' + currRecipe.recipeUrl + '">' + currRecipe.recipeTitle + '</a></p>';
-        if (currRecipe.recipeShortDesc !== '') {
+        if (currRecipe.recipeShortDesc !== '' && currRecipe.recipeShortDesc !== null) {
             recipeHtml += '<p class="desc"><a href="' + currRecipe.recipeUrl + '">' + currRecipe.recipeShortDesc + '</a></p>';
         }
         recipeHtml += '</div></div>';
@@ -76,7 +76,7 @@ let parseRecipeDate = function parseRecipeDate() {
 };
 
 let getAllRecipes = function getAllRecipes() {
-    let url = '/services/allrecipes';
+    let url = '/services/allrecipes/';
     let request = {
             url : url,
             type : 'get',

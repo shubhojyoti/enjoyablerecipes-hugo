@@ -31,7 +31,7 @@
                         </div>
                     </div>
                     <div class="recipeentries row align-center small-up-2 medium-up-3 large-up-4">
-                        {{ range where .Site.Pages "Type" "in"  ("recipe") }}
+                        {{ range where .Site.Pages "Type" "in"  ("recipe") }}{{ if ne .Kind "section"}}
                         <div class="recipeentry column">
                             <a class="recipeentryimage" href="{{ .Permalink }}">
                                 {{ $imageparts := split .Params.recipeimage "." }}
@@ -42,7 +42,7 @@
                                 {{ if .Params.subtitle }}<p class="desc"><a href="{{ .Permalink }}">{{ .Params.subtitle }}</a></p>{{ end }}
                             </div>
                         </div>
-                        {{ end }}
+                        {{ end }}{{ end }}
                     </div>
                     <div class="recipelistentries hide">
                         <ul>

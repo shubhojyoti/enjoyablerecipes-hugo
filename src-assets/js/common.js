@@ -31,7 +31,7 @@ common.getUrlVars = () => {
         vars[hash[0]] = hash[1];
     }
     return vars;
-};
+}; //BOOM
 
 // Scroll to Top
 // http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
@@ -107,7 +107,7 @@ common.backToTopShow = () => {
 common.backToTopEvtListener = () => {
     let backToTop = document.querySelector("#backtotopbutton");
     backToTop.addEventListener("click", function() {
-        scrollToY(0, 1500, 'easeInOutQuint');
+        common.scrollToY(0, 1500, 'easeInOutQuint');
     });
 };
 

@@ -9,10 +9,14 @@
 @media only screen and (min-width: 40.063em) {
     .breadcrumb-area {
         display: block;
-        margin: 0 0 0.5em;
+        margin: 1em 0 0.5em;
 
         //background-color: #F5F8E2;
 
+    }
+
+    .searchwidget + .articlecontainer > .breadcrumb-area {
+        margin-top: 0;
     }
 
     .breadcrumb-trail {
