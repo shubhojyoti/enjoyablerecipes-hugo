@@ -8,6 +8,7 @@ Error.log
 .tmp
 .rvmrc
 .trashes
+bk.content
 *~
 dev
 public
