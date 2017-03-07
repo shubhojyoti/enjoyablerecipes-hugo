@@ -29,8 +29,10 @@
         "build": "gulp",
         "final": "gulp prod",
         "hugodev": "sleep 8 && hugo serve -d dev -b http://enjoyablerecipes.hugo -w",
-        "hugoprod": "sleep 5 && hugo_0.18",
+        "hugoprod": "sleep 5 && hugo",
         "dev": "npm-run-all --parallel build hugodev",
-        "prod": "npm-run-all final hugoprod"
+        "prod": "npm-run-all final hugoprod",
+        "tempprod": "npm-run-all final temphugoprod",
+        "temphugoprod": "wget https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19_Linux-64bit.tar.gz && tar xzf hugo_0.19_Linux-64bit.tar.gz && hugo_0.19_linux_amd64/hugo_0.19_linux_amd64"
     }
 }
