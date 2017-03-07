@@ -31,10 +31,10 @@ Those busy days when both of us return quite late from work, Sumi is too tired t
 
 {{< recipe-ingredient-list
 "Chicken breast - 2"
-"Ginger Garlic paste - 1tbsp"
-"Chilli powder - 1tbsp"
-"Black paper ground - 1tsp"
-"Lemon juice - 1tbsp"
+"Ginger Garlic paste - 1 tbsp"
+"Chilli powder - 1 tbsp"
+"Black paper ground - 1 tsp"
+"Lemon juice - 1 tbsp"
 "Oil - for shallow fry"
 "Salt - to taste" >}}
 

@@ -41,7 +41,7 @@ Back to our recipe, I was updating the blog today with a new theme and ended up 
 
 {{< recipe-ingredient-list
 "Emperor (or Indian Salmon) fish fillet (approx 400gm) - 2"
-"Salt - 1.5tsp"
+"Salt - 1.5 tsp"
 "Peppercorns (crushed) - 12"
 "Lemon Juice - 1/2" >}}
 
@@ -50,10 +50,10 @@ Back to our recipe, I was updating the blog today with a new theme and ended up 
 {{< recipe-ingredient-list
 "Yoghurt (thick) - 150gm"
 "Fresh Cream - 100ml"
-"Salt - 1/3tsp"
-"Garam Masala powder - 1/2tsp"
-"Black Pepper grounded - 1/2tsp"
-"Red Chilli powder - 1/2tsp"
+"Salt - 1/3 tsp"
+"Garam Masala powder - 1/2 tsp"
+"Black Pepper grounded - 1/2 tsp"
+"Red Chilli powder - 1/2 tsp"
 "Onion (small and sliced thin) - 1/2"
 "Garlic cloves (minced) - 2" >}}
 
@@ -61,8 +61,8 @@ Back to our recipe, I was updating the blog today with a new theme and ended up 
 
 {{< recipe-ingredient-list
 "Butter - 100gm"
-"Vegetable oil - 2tbsp"
-"Parsley (for topping) - 1tbsp" >}}
+"Vegetable oil - 2 tbsp"
+"Parsley (for topping) - 1 tbsp" >}}
 
 #### Method
 

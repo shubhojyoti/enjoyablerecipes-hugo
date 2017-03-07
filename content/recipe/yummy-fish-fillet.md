@@ -38,16 +38,16 @@ I would like to take this opportunity to wish everyone a Happy New Year. I look 
 
 {{< recipe-ingredient-list
 "White fish fillet - 3 (approx 250gm total)"
-"Coriander paste - 2tbsp"
-"Cumin paste - 1tbsp"
-"Red chilli paste - 1tsp"
-"Garlic paste - 1tsp"
-"Ginger paste - 1tsp"
-"Turmeric powder - 1/2tsp"
+"Coriander paste - 2 tbsp"
+"Cumin paste - 1 tbsp"
+"Red chilli paste - 1 tsp"
+"Garlic paste - 1 tsp"
+"Ginger paste - 1 tsp"
+"Turmeric powder - 1/2 tsp"
 "Onion (medium sized thin slices) - 1"
 "Leek (thin slices) - 1/2 stalk"
 "Tomato (thin sliced) - 1"
-"Lemon juice - 1tbsp"
+"Lemon juice - 1 tbsp"
 "Vegetable oil - as required"
 "Salt - to taste" >}}
 

@@ -37,9 +37,9 @@ Boomboom is not well today. So I wanted to cook something light for him with ver
 "Potato - 1 medium sized sliced thin"
 "Onion - 1 big sliced thin"
 "Green chillies - 2 sliced to thin pieces"
-"Ginger julienne - 1tsp"
-"Big Mustard seeds - 1tsp"
-"Vegetable oil - 1tbsp"
+"Ginger julienne - 1 tsp"
+"Big Mustard seeds - 1 tsp"
+"Vegetable oil - 1 tbsp"
 "Salt - to taste" >}}
 
 #### Method

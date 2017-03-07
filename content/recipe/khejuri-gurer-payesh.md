@@ -54,7 +54,7 @@ Bengalis are known for their sweet teeth. No matter what the occasion is, sweets
 
 "Wash the rice, mix with ghee and add it to the boiling milk which is still in the utensil. The rice must be added in bits, each time stirring it finely and then letting the milk boil further to reduce it. Keep doing this till the entire rice has been added and mixed."
 
-"Once the rice is mixed fully, add sugar and khowa to it. Keep stirring and when the milk reduces further add a little bit (around 5tbsp) of the milk that was set aside in the first step."
+"Once the rice is mixed fully, add sugar and khowa to it. Keep stirring and when the milk reduces further add a little bit (around 5 tbsp) of the milk that was set aside in the first step."
 
 "Add the jaggery, half of the raisins and around 3-4 cashewnuts (after breaking them)."
 

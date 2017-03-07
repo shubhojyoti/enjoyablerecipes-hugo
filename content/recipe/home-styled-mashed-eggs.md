@@ -30,11 +30,11 @@ Last Wednesday, both of us had a severe craving for eggs in the evening and that
 "Eggs hard boiled - 6"
 "Onion chopped - 1 medium sized"
 "Green chillies chopped - 4"
-"Ground pepper - 1/2tsp"
+"Ground pepper - 1/2 tsp"
 "Salt - to taste"
 "Butter cube - 1 inch"
-"Vegetable oil - 1tsp"
-"Coriander leaves fresh and chopped (Optional) - 1tsp" >}}
+"Vegetable oil - 1 tsp"
+"Coriander leaves fresh and chopped (Optional) - 1 tsp" >}}
 
 #### Method
 

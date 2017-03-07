@@ -33,14 +33,14 @@ Bhindi is one of the most loved vegetables in India. There is a saying that peop
 "Okra (Bhindi) - 500gm"
 "Potato - 2 big sized (sliced into thin pieces)"
 "Onion slit - 1"
-"Tomato paste/puree - 2tbsp"
-"Coriander powder - 4tbsp"
-"Kitchen King powder - 1tsp"
-"Red Chilli powder - 1tsp"
-"Garam Masala powder - 1tsp"
-"Turmeric powder - 1/2tsp"
+"Tomato paste/puree - 2 tbsp"
+"Coriander powder - 4 tbsp"
+"Kitchen King powder - 1 tsp"
+"Red Chilli powder - 1 tsp"
+"Garam Masala powder - 1 tsp"
+"Turmeric powder - 1/2 tsp"
 "Asafoetida - a pinch"
-"Vegetable oil - 2tbsp"
+"Vegetable oil - 2 tbsp"
 "Salt - to taste" >}}
 
 #### Method

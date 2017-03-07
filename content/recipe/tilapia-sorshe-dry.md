@@ -35,16 +35,16 @@ Sumi cooked this 3 months back. It was raining and we were hungry. Just a day ba
 
 {{< recipe-ingredient-list
 "Tilapia fish (each cut into 2 halves) - 2"
-"White Mustard paste - 3tbsp"
-"Chilli powder - 1tsp"
-"Turmeric powder - 1/2tsp"
-"Ginger paste - 1/2tsp"
+"White Mustard paste - 3 tbsp"
+"Chilli powder - 1 tsp"
+"Turmeric powder - 1/2 tsp"
+"Ginger paste - 1/2 tsp"
 "Onion (small and chopped fine) - 1"
 "Green chillies (slit length wise) - 4-5"
 "Mustard Oil - as required"
 "Salt - to taste"
-"Lemon juice - 1tsp"
-"Parsley (freshly chopped) - 1tsp" >}}
+"Lemon juice - 1 tsp"
+"Parsley (freshly chopped) - 1 tsp" >}}
 
 #### Method
 

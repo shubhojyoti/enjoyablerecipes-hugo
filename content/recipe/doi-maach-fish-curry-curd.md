@@ -33,11 +33,11 @@ Fish is compulsory on the dining table of any bengali. We literally start our li
 {{< recipe-ingredient-list
 "Rohu fish (medium sized pieces) - 500gm"
 "Onion chopped - 1 medium size"
-"Mustard seeds - 1tsp"
+"Mustard seeds - 1 tsp"
 "Green chillies (slit lengthwise) - 4-5"
-"Turmeric powder - 1/2tsp"
-"Ginger garlic paste - 1tsp"
-"Red chilli powder - 1tsp"
+"Turmeric powder - 1/2 tsp"
+"Ginger garlic paste - 1 tsp"
+"Red chilli powder - 1 tsp"
 "Curd - 300gm"
 "Oil - as needed"
 "Salt - to taste"
@@ -60,4 +60,4 @@ Fish is compulsory on the dining table of any bengali. We literally start our li
 
 "Now put the remaining curd, add little bit sugar and salt. Make sure the curd remains thick so do not over cook."
 
-"Lay the fish in a dish and garnish with fresh coriander leaves and 1tbsp of raw mustard oil." >}}
+"Lay the fish in a dish and garnish with fresh coriander leaves and 1 tbsp of raw mustard oil." >}}

@@ -38,19 +38,19 @@ The recipe is essentially low carbohydrate but if you are trying to follow a die
 
 {{< recipe-ingredient-list
 "Prawn (de-veined, de-shelled and cleaned) - 500gm"
-"Cashewnut paste - 5tbsp"
+"Cashewnut paste - 5 tbsp"
 "Capsicum (medium sized and julienne cut) - 1"
-"Green chilli paste - 1tbsp"
-"Onion paste - 1tbsp"
-"Garlic paste - 1tsp"
-"Cumin paste - 1tsp"
-"Coriander paste - 1tsp"
-"Ginger paste - 1/2tsp"
-"Turmeric powder - 1/2tsp"
+"Green chilli paste - 1 tbsp"
+"Onion paste - 1 tbsp"
+"Garlic paste - 1 tsp"
+"Cumin paste - 1 tsp"
+"Coriander paste - 1 tsp"
+"Ginger paste - 1/2 tsp"
+"Turmeric powder - 1/2 tsp"
 "Butter - 80gm"
 "Salt - to taste"
-"Groundnut oil - 1tsp"
-"Coriander leaves chopped (for garnish) - 1tbsp" >}}
+"Groundnut oil - 1 tsp"
+"Coriander leaves chopped (for garnish) - 1 tbsp" >}}
 
 #### Method
 

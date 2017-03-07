@@ -30,11 +30,11 @@ Well its been a long time and we have not added any recipe. One of the reason be
 "Bread - 8 slices"
 "Onion (big sized chopped into medium squared pieces) - 1"
 "Green chillies (lengthwise slit) - 4"
-"Groundnut - 2tbsp"
-"Mustard seeds - 1/2tsp"
+"Groundnut - 2 tbsp"
+"Mustard seeds - 1/2 tsp"
 "Curry leaves - 12 (approx)"
-"Chat masala powder (or Kitchen King) - 1tsp"
-"Groundnut oil - 1-2tbsp (enough for cooking but not stick to pan)"
+"Chat masala powder (or Kitchen King) - 1 tsp"
+"Groundnut oil - 1-2 tbsp (enough for cooking but not stick to pan)"
 "Salt - to taste" >}}
 
 #### Method

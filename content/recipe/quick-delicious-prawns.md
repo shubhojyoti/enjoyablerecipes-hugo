@@ -30,15 +30,15 @@ Due to our diet and erratic cooking habits we always try to find the fastest way
 
 {{< recipe-ingredient-list
 "Prawns - 500gm"
-"Red Chilli powder - 2tsp"
-"Turmeric powder - 1tsp"
+"Red Chilli powder - 2 tsp"
+"Turmeric powder - 1 tsp"
 "Green Chillies chopped - 4"
 "Ginger sliced - 1inch"
 "Small onions - 8-10"
 "Garlic cloves chopped - 4-5"
-"Lemon juice - 2tsp"
-"Mustard oil - 2tsp"
-"Vegetable oil - 1tbsp"
+"Lemon juice - 2 tsp"
+"Mustard oil - 2 tsp"
+"Vegetable oil - 1 tbsp"
 "Salt - to taste" >}}
 
 #### Method

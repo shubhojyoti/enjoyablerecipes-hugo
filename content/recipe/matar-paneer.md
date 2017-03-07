@@ -46,15 +46,15 @@ So today I am posting one of those 4 dishes. It is a classic in North Indian cui
 "Tomato - 1 (cut into big slices)"
 "Capsicum - 1 big (slices into small pieces)"
 "Kasoori Methi (Dried Fenugreek seeds) - 1 pinch"
-"Jeera (Cumin) powder - 1/2tsp"
-"Dhaniya (Coriander) Powder - 1/2tsp"
-"Chilli Powder - 1/2tsp"
-"Garam Masala Powder - 1/2tsp"
-"Shahi Paneer Masala Powder (optional) - 1/2tsp"
-"Tomato Ketchup - 1/2small cup"
+"Jeera (Cumin) powder - 1/2 tsp"
+"Dhaniya (Coriander) Powder - 1/2 tsp"
+"Chilli Powder - 1/2 tsp"
+"Garam Masala Powder - 1/2 tsp"
+"Shahi Paneer Masala Powder (optional) - 1/2 tsp"
+"Tomato Ketchup - 1/2 small cup"
 "Salt - to taste"
 "Butter - 50gm"
-"Clear Oil - 4tbsp"
+"Clear Oil - 4 tbsp"
 "Fresh Coriander Leaves - for garnish" >}}
 
 #### Method

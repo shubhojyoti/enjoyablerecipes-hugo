@@ -35,12 +35,12 @@ Sumi is crazy about potatoes. She says that’s the reason she looks like a pota
 "Potato sliced into thin pieces - 1 big sized"
 "Onion sliced thin - 1 big sized"
 "Green chillies sliced thin - 3"
-"Kitchen King powder - 2tsp"
-"Black Pepper powder - 1/2tsp"
-"Tomato Ketchup - 2tbsp"
-"Soya Sauce - 1tsp"
-"Chilli Sauce - 1tsp"
-"Oil - 3tbsp"
+"Kitchen King powder - 2 tsp"
+"Black Pepper powder - 1/2 tsp"
+"Tomato Ketchup - 2 tbsp"
+"Soya Sauce - 1 tsp"
+"Chilli Sauce - 1 tsp"
+"Oil - 3 tbsp"
 "Salt - to taste" >}}
 
 #### Method

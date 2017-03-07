@@ -38,10 +38,10 @@ Today I will post my mom’s version of the dish. It is the East Bengal style of
 "Green Chillies - 3-4"
 "[Kaalo Jeera (Black Cumin Seeds)](https://en.wikipedia.org/wiki/Bunium_persicum) - 1 pinch"
 "Heeng (Asafoetida) - 1 pinch"
-"Chilly Powder - 1tsp"
-"Sugar - 1tsp"
-"Turmeric Powder - 2tsp"
-"Mustard Oil - 4tbsp"
+"Chilly Powder - 1 tsp"
+"Sugar - 1 tsp"
+"Turmeric Powder - 2 tsp"
+"Mustard Oil - 4 tbsp"
 "Salt - to taste"
 "Coriander Leaves - For garnish (optional)" >}}
 

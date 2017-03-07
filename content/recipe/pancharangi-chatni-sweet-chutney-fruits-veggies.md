@@ -42,10 +42,10 @@ Chutneys are a regular in any Indian menu, mostly as appetizers. But among Benga
 "Cherry - 20gm"
 "Cashewnuts - 8-10"
 "Raisins - 20gm"
-"[Paanch Foron (Five spices)](https://en.wikipedia.org/wiki/Panch_phoron) - 1/2tsp"
-"Bhaja Mosola Guro (Indian five spices dry roasted and grounded to powder) - 1tsp"
+"[Paanch Foron (Five spices)](https://en.wikipedia.org/wiki/Panch_phoron) - 1/2 tsp"
+"Bhaja Mosola Guro (Indian five spices dry roasted and grounded to powder) - 1 tsp"
 "Sugar - to taste"
-"Clear oil - 1tbsp" >}}
+"Clear oil - 1 tbsp" >}}
 
 #### Method
 

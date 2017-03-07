@@ -41,7 +41,7 @@ I usually don’t post my own recipes here. Usually they have either been cooked
 #### Method
 
 {{< recipe-prep-steps
-"In a mixing bowl, add the red chilly powder, cumin powder, garam masala powder and ginger garlic paste. Add around 4tsp of oil. Now add the chicken to the bowl and mix well with the spices. Leave the chicken for around half an hour to marinate. The more you marinate, the better it is, but this is a quick recipe."
+"In a mixing bowl, add the red chilly powder, cumin powder, garam masala powder and ginger garlic paste. Add around 4 tsp of oil. Now add the chicken to the bowl and mix well with the spices. Leave the chicken for around half an hour to marinate. The more you marinate, the better it is, but this is a quick recipe."
 
 "In a pan, add the rest of the oil and heat it. Add the cumin seeds and curry leaves. Stir till the aroma of the leaves and cumin seeds come out. Brown each pieces of marinated chicken for around 2 minutes on both sides and keep it aside."
 

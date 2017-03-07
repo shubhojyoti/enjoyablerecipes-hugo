@@ -40,12 +40,12 @@ The picture is of the chicken when it came just out of the microwave so pardon t
 "Medium onions (cut into 4 pieces) - 2"
 "Thyme leaves - 2 twigs"
 "Green Chillies - 10"
-"Soya Sauce - 2tbsp"
+"Soya Sauce - 2 tbsp"
 "Ginger slit 1inch - 4-5"
 "Yoghurt - 200gm"
-"Turmeric powder - 1tbsp"
+"Turmeric powder - 1 tbsp"
 "Salt - to taste"
-"Vinegar - 1tsp"
+"Vinegar - 1 tsp"
 "Water - 2 litres"
 "Lemon whole cut into 4 pieces - 2" >}}
 

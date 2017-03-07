@@ -36,17 +36,17 @@ Continuing with being [fishy](/recipe/tilapia-sorshe-dry/), this was the second 
 
 {{< recipe-ingredient-list
 "Rohu Fish (Rui Maach in Bengali, Indian fresh water Carp) - 8 slices (approx 800gm)"
-"Ginger paste - 1.5tbsp"
-"Garlic paste - 1tsp"
-"Cumin paste - 3tbsp"
-"Coriander paste - 1tbsp"
-"Turmeric powder - 1tbsp"
-"Red Chilli powder - 1tbsp (or as per taste)"
+"Ginger paste - 1.5 tbsp"
+"Garlic paste - 1 tsp"
+"Cumin paste - 3 tbsp"
+"Coriander paste - 1 tbsp"
+"Turmeric powder - 1 tbsp"
+"Red Chilli powder - 1 tbsp (or as per taste)"
 "Onion (medium sized and chopped thin) - 1"
 "Green chillies (slit length wise) - 4-5"
 "Mustard Amount - Considerable amount"
 "Salt - to taste"
-"Parsley (chopped fresh) - 1tsp" >}}
+"Parsley (chopped fresh) - 1 tsp" >}}
 
 #### Method
 
