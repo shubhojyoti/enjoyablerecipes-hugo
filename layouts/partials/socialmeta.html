@@ -5,4 +5,3 @@
     {{ if .Params.recipeimage }}{{ $imageparts := split .Params.recipeimage "." }}<meta property="og:image:url" content= "{{ .Site.BaseURL }}assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w571h428.{{ index $imageparts 1 }}" />{{ else }}<meta property="og:image" content="{{ .Site.BaseURL }}assets/images/enjoyable-recipes-logo.svg" />{{ end }}
     {{ if .Params.recipeimage }}<meta property="og:image:width" property="571" />
     <meta property="og:image:height" property="428" />{{ end }}
-    <meta property="article:author" content="Shubhojyoti Bhattacharya"/>
