@@ -18,3 +18,4 @@ canonifyURLs: true
 sitemap:
     priority: 0.5
     changefreq: monthly
+enableRobotsTXT: true
