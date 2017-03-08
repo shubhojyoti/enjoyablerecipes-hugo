@@ -2,6 +2,8 @@
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{end}}" />
     <meta property="og:title" content='{{ partial "headertitle.html" . }}' />
     {{ if .IsPage }}<meta property="og:description" content="{{ if .Params.excerpt }}{{ .Params.excerpt }}{{ else }}{{ .Summary }}{{ end }}" />{{ end }}
-    {{ if .Params.recipeimage }}{{ $imageparts := split .Params.recipeimage "." }}<meta property="og:image:url" content= "{{ .Site.BaseURL }}assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w571h428.{{ index $imageparts 1 }}" />{{ else }}<meta property="og:image" content="{{ .Site.BaseURL }}assets/images/enjoyable-recipes-logo.svg" />{{ end }}
+    {{ if .Params.recipeimage }}{{ $imageparts := split .Params.recipeimage "." }}<meta property="og:image" content= "http://enjoyable.recipes/assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w571h428.{{ index $imageparts 1 }}" />
+    <meta property="og:image:secure_url" content= "{{ .Site.BaseURL }}assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w571h428.{{ index $imageparts 1 }}" />{{ else }}<meta property="og:image" content="http://enjoyable.recipes/assets/images/enjoyable-recipes-logo.svg" />
+    <meta property="og:image:secure_url" content="{{ .Site.BaseURL }}assets/images/enjoyable-recipes-logo.svg" />{{ end }}
     {{ if .Params.recipeimage }}<meta property="og:image:width" property="571" />
     <meta property="og:image:height" property="428" />{{ end }}
