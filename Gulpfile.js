@@ -180,6 +180,7 @@ gulp.task('prod', function(callback) {
 gulp.task('default', function(callback) {
     runSequence('clean',
                 'static',
-                ['build:css:dev', 'build:js:dev'],
-                ['csswatch', 'jswatch']);
+                ['build:css:dev', 'build:js:dev']);
 });
+
+gulp.task('watch', ['csswatch', 'jswatch']);

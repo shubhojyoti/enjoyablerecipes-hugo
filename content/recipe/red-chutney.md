@@ -16,7 +16,6 @@ ingredients:
 - Mustard
 - Spicy
 title: Red Chutney
-slug: red-chutney
 recipeimage: red-chutney.jpg
 ---
 
