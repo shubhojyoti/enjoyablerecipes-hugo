@@ -1,7 +1,7 @@
 languageCode: "en-us"
 author: "Shubhojyoti Bhattacharya"
 title: "Enjoyable Recipes"
-baseurl: "https://enjoyable.recipes"
+baseurl: "https://enjoyable.recipes/"
 MetaDataFormat: "yaml"
 taxonomies:
     ingredient: "ingredients"
