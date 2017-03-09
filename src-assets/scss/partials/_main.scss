@@ -144,7 +144,7 @@ h2.pagetitle {
     display: table;
     position: relative;
 
-    figcaption {
+    .figcaption {
         text-align: center;
         background-color: rgba(70, 25, 5, 0.8);
         color: #ffffff;
@@ -167,7 +167,7 @@ h2.pagetitle {
     border: 1px solid #ddd;
     margin-bottom: 1.5em;
 
-    figcaption {
+    .figcaption {
         text-align: left;
         background-color: rgba(70, 25, 5, 0.8);
         color: #fff;
@@ -424,7 +424,7 @@ footer {
         }
     }
 
-    figcaption {
+    .figcaption {
         display: none;
     }
 }

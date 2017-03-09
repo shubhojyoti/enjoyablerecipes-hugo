@@ -69,7 +69,7 @@ let createSliderHtml = function createSliderHtml(data, numbers, max) {
         }
         curr = curr.split(".");
         html += "<div class='slide_image'>" +
-            "<figure><picture><source media=\"(min-width: 320px)\"" +
+            "<div class=\"figure\"><picture aria-labelledby=\"slide_image_" + i + "\"><source media=\"(min-width: 320px)\"" +
             " srcset=\"/assets/blogposts/recipeimages/" +
             curr[0] + "-w750h300." + curr[1] + " 750w," +
             "/assets/blogposts/recipeimages/" +
@@ -87,11 +87,11 @@ let createSliderHtml = function createSliderHtml(data, numbers, max) {
             "(min-width: 1025px) 750px\" />" +
             "<img src=\"/assets/blogposts/recipeimages/" +
             curr[0] + "-w699h262." + curr[1] + "\" alt=\"" + title + "\"></picture>" +
-            "<figcaption property=\"name\"><a href=\"" + url + "\" rel='bookmark'>" + title + "</a>";
+            "<div id=\"slide_image_" + i + "\" class=\"figcaption\" property=\"name\"><a href=\"" + url + "\" rel='bookmark'>" + title + "</a>";
         if (caption !== "" && caption !== null) {
-            html += "<br><p class=\"desc\">" + caption + "</p></figcaption></figure></div>\n";
+            html += "<br><p class=\"desc\">" + caption + "</p></div></div></div>\n";
         } else {
-            html += "<br><p class=\"desc\">&nbsp;</p></figcaption></figure></div>\n";
+            html += "<br><p class=\"desc\">&nbsp;</p></div></div></div>\n";
         }
     }
     document.querySelector(".slider_images").innerHTML = html;

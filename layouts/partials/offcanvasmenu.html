@@ -1,6 +1,6 @@
             <!-- Off Canvas Menu -->
             <aside class="boom-right-off-canvas-menu" aria-hidden="true">
-                <div class="row">
+                {{ if false }}<div class="row">
                     <div class="small-16 columns searchoff">
                         <div class="offsearch">
                             <form role="search" method="get" class="search-form" action="https://enjoyablerecipes.yay/core">
@@ -15,7 +15,7 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </div>{{ end }}
                 <div class="offlinks">
                     <div class="mainlinks">
                         <ul>
@@ -32,14 +32,7 @@
                         <h4 class="widget-title">Recipes by Courses</h4>
                         <ul>
                             {{ range $name, $taxonomy := .Site.Taxonomies.recipecourses }}
-                            {{ $nameparts := (split (humanize $name) " ")}}
-                            {{ $.Scratch.Set "finaltag" " "}}
-                            {{ range $nameparts }}
-                            {{ $.Scratch.Add "finaltag" (humanize .) }}
-                            {{ $.Scratch.Add "finaltag" " "}}
-                            {{ end }}
-                            {{ $recipetag := $.Scratch.Get "finaltag" }}
-                            <li><a href="/recipecourses/{{ $name | urlize }}">{{ $recipetag | replaceRE "^ (.*) $" "$1"}}</a></li>
+                            <li><a href="/recipecourses/{{ $name | urlize }}">{{ $name | humanize | title }}</a></li>
                             {{ end }}
                         </ul>
                     </div>
@@ -47,14 +40,7 @@
                         <h4 class="widget-title">Recipes by Types</h4>
                         <ul>
                             {{ range $name, $taxonomy := .Site.Taxonomies.recipetypes }}
-                            {{ $nameparts := (split (humanize $name) " ")}}
-                            {{ $.Scratch.Set "finaltag" " "}}
-                            {{ range $nameparts }}
-                            {{ $.Scratch.Add "finaltag" (humanize .) }}
-                            {{ $.Scratch.Add "finaltag" " "}}
-                            {{ end }}
-                            {{ $recipetag := $.Scratch.Get "finaltag" }}
-                            <li><a href="/recipetypes/{{ $name | urlize }}">{{ $recipetag | replaceRE "^ (.*) $" "$1"}}</a></li>
+                            <li><a href="/recipetypes/{{ $name | urlize }}">{{ $name | humanize | title }}</a></li>
                             {{ end }}
                         </ul>
                     </div>
@@ -62,14 +48,7 @@
                         <h4 class="widget-title">Recipes by Categories</h4>
                         <ul>
                             {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-                            {{ $nameparts := (split (humanize $name) " ")}}
-                            {{ $.Scratch.Set "finaltag" " "}}
-                            {{ range $nameparts }}
-                            {{ $.Scratch.Add "finaltag" (humanize .) }}
-                            {{ $.Scratch.Add "finaltag" " "}}
-                            {{ end }}
-                            {{ $recipetag := $.Scratch.Get "finaltag" }}
-                            <li><a href="/categories/{{ $name | urlize }}">{{ $recipetag | replaceRE "^ (.*) $" "$1"}}</a></li>
+                            <li><a href="/categories/{{ $name | urlize }}">{{ $name | humanize | title }}</a></li>
                             {{ end }}
                         </ul>
                     </div>

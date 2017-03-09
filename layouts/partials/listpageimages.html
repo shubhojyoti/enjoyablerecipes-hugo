@@ -1,7 +1,7 @@
 {{ if .Params.recipeimage }}
 {{ $imageparts := split .Params.recipeimage "." }}
-<figure class="recipeimage">
-                                <picture>
+<div class="figure recipeimage">
+                                <picture aria-labelledby="{{ with .Slug }}{{ . }}{{ else }}{{ .BaseFileName }}{{ end }}">
                                     <source
                                         media="(min-width: 320px)"
                                         data-original-set="/assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w750h300.{{ index $imageparts 1 }} 750w,
@@ -16,8 +16,8 @@
                                                (min-width: 1025px) 750px" />
                                     <img data-original="/assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w699h262.{{ index $imageparts 1 }}" alt='{{ .Title }}{{ if .Params.subtitle }} &#45; {{ .Params.subtitle }}{{ end }}'>
                                 </picture>
-                                <figcaption property="name">
+                                <div id="{{ with .Slug }}{{ . }}{{ else }}{{ .BaseFileName }}{{ end }}" class="figcaption" property="name">
                                     {{ .Title }}{{ if .Params.subtitle }} &#45; {{ .Params.subtitle }}{{ end }}
-                                </figcaption>
-                            </figure>
+                                </div>
+                            </div>
 {{ end }}

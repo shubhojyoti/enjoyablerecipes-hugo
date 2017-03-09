@@ -27,7 +27,7 @@
     margin: 0;
     margin-top: -1.5em;
 
-    figure {
+    .figure {
         border: 1px solid #ccc;
         background-color: #ffffff;
         margin: 0 auto;
@@ -40,7 +40,7 @@
             box-shadow: 0 5px 0 0 #ccc;
         }
 
-        figcaption {
+        .figcaption {
             font-size: 0.8rem;
             padding-top: 0.45em;
             color: #333;

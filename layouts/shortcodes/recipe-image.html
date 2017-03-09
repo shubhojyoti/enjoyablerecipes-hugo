@@ -1,7 +1,7 @@
 {{ if .Page.Params.recipeimage }}
 {{ $imageparts := split .Page.Params.recipeimage "." }}
-<figure class="recipeimage{{ if .Get "pagetype" }}{{ if eq (.Get "pagetype") "single" }} recipeimagesingle{{ end }}{{ end }}">
-    <picture>
+<div class="figure recipeimage{{ if .Get "pagetype" }}{{ if eq (.Get "pagetype") "single" }} recipeimagesingle{{ end }}{{ end }}">
+    <picture aria-labelledby="singleimgset">
         <source media="(min-width: 320px)" data-original-set="/assets/blogposts/recipeimages/{{ .Page.Params.recipeimage }} 844w,
                     /assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w699h524.{{ index $imageparts 1 }} 699w,
                     /assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w571h428.{{ index $imageparts 1 }} 571w,
@@ -13,8 +13,8 @@
                    (min-width: 1025px) 844px"/>
         <img data-original="/assets/blogposts/recipeimages/{{ index $imageparts 0 }}-w699h524.{{ index $imageparts 1 }}" alt='{{ .Page.Title }}{{ if .Page.Params.subtitle }} &#45; {{ .Page.Params.subtitle }}{{ end }}' property="image">
     </picture>
-    <figcaption property="name">
+    <div id="singleimgset" class="figcaption" property="name">
         {{ .Page.Title }}{{ if .Page.Params.subtitle }} &#45; {{ .Page.Params.subtitle }}{{ end }}
-    </figcaption>
-</figure>
+    </div>
+</div>
 {{ end }}

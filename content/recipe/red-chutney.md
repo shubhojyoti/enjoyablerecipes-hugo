@@ -21,7 +21,7 @@ recipeimage: red-chutney.jpg
 
 Chutneys are a mainstay in Indian cooking. They bring out the flavors of any dish. They can be used as an appetizer, be an accompaniment with your main course or can even be used as a dessert. They can be sweet or a savory. The type and preparation of different chutneys has significant regional variations.
 
-I love sweet chutneys. You can find one of my eternal favorites [here](/recipe/pancharangi-chatni-sweet-chutney-fruits-veggies/). Sumi loves the spicy varities more. She makes this awesome South Indian style red chutney. It is very spicy but the the flavor of each ingredients makes it a unique experience. She made this last Sunday and made enough to last us the entire week.
+I love sweet chutneys. You can find one of my eternal favorites [here](/recipe/pancharangi-chatni-sweet-chutney-fruits-veggies/). Sumi loves the spicy varieties more. She makes this awesome South Indian style red chutney. It is very spicy but the the flavor of each ingredients makes it a unique experience. She made this last Sunday and made enough to last us the entire week.
 
 {{< recipe-image pagetype="single" >}}
 

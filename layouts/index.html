@@ -39,10 +39,10 @@
                             {{ range first 3 (after 2 (where .Site.Pages "Section" "in" (slice "recipe"))) }}
                             <div class="recipeentry column">
                                 {{ $imageparts := split .Params.recipeimage "." }}
-                                <a href="{{ .Permalink }}"><figure>
+                                <a href="{{ .Permalink }}"><div class="figure">
                                     <img src="/assets/blogposts/recipeimages/{{ index $imageparts 0}}-w450h338.{{ index $imageparts 1}}" alt="{{ .Title }}">
-                                    <figcaption>{{ .Title }}</figcaption>
-                                </figure></a>
+                                    <p class="figcaption">{{ .Title }}</p>
+                                </div></a>
                             </div>
                             {{ end }}
                         </div>
