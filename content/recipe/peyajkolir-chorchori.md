@@ -12,7 +12,7 @@ specialrecipes:
 - Low Carb
 tags: ''
 title: Peyajkolir Chochchori
-date: '2017-03-14T23:02:38+00:00'
+date: '2017-03-14T23:32:00+05:30'
 ingredients: ''
 excerpt: ''
 wordpress_id: 71
