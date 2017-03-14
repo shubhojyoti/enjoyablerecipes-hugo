@@ -1,19 +1,17 @@
 ---
 author: Shubhojyoti Bhattacharya
-subtitle: Potato Cauliflower Dish in Tomato Sauce
-slug: aloo-gobi-in-tomato-sauce
-recipeimage: aloogobi.jpg
+subtitle: Spring Onion Vegetarian Dish
+slug: peyajkolir-chochchori-chorchori-spring-onion
+recipeimage: ''
 categories:
 - Vegetables
 recipecourses:
 - Main Course
-recipetypes:
-- Vegetarian
+recipetypes: Vegetarian
 specialrecipes:
 - Low Carb
-tags:
-- SOME
-title: Peyajkolir Chorchori
+tags: ''
+title: Peyajkolir Chochchori
 date: '2017-03-14T23:02:38+00:00'
 ingredients:
 - Cauliflower
