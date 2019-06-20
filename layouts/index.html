@@ -32,11 +32,11 @@
 
                     <div id="recentrecipes">
                         <h2><span>Latest Recipes</span></h2>
-                        {{ range first 2 (where .Site.Pages "Section" "in" (slice "recipe")) }}
+                        {{ range first 2 (where .Site.RegularPages "Section" "in" (slice "recipe")) }}
                         {{ .Render "summary" }}
                         {{ end }}
                         <div class="row align-center small-up-2 medium-up-3 large-up-3">
-                            {{ range first 3 (after 2 (where .Site.Pages "Section" "in" (slice "recipe"))) }}
+                            {{ range first 3 (after 2 (where .Site.RegularPages "Section" "in" (slice "recipe"))) }}
                             <div class="recipeentry column">
                                 {{ $imageparts := split .Params.recipeimage "." }}
                                 <a href="{{ .Permalink }}"><div class="figure">
